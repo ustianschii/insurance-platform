@@ -1,12 +1,14 @@
-import { Fragment } from "react/jsx-runtime";
-import "./App.css";
-import Navigation from "./routes/Navigation/navigation.component";
+import Body from "./components/Body/Body";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <Fragment>
-      <Navigation />
-    </Fragment>
+    <>
+      <Header></Header>
+      <Body></Body>
+      <Footer></Footer>
+    </>
   );
 }
 
