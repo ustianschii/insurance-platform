@@ -1,6 +1,7 @@
 import {
   Card as MuiCard,
   CardContent as MuiCardContent,
+  CardMedia as MuiCardMedia,
   Button as MuiButton,
   styled,
 } from "@mui/material";
@@ -19,6 +20,15 @@ export const CardContentContainer = styled(MuiCardContent)(() => ({
   display: "block",
   width: "100%",
   height: "50%",
+}));
+
+export const CardMediaContainer = styled(MuiCardMedia)(() => ({
+  position: "absolute",
+  bottom: "0",
+  right: "0",
+  height: "170px",
+  width: "270px",
+  margin: "0 -10px 0 0",
 }));
 
 export const CustomButton = styled(MuiButton)(() => ({

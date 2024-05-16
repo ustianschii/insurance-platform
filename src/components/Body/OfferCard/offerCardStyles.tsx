@@ -2,6 +2,7 @@ import {
   Container as MuiContainer,
   Card as MuiCard,
   CardContent as MuiCardContent,
+  CardMedia as MuiCardMedia,
   Button as MuiButton,
   styled,
 } from "@mui/material";
@@ -12,6 +13,7 @@ export const OfferCardsContainer = styled(MuiContainer)(() => ({
   flexWrap: "wrap",
   height: "650px",
   marginTop: "-100px",
+  marginBottom: "-50px",
 }));
 
 export const CardContainer = styled(MuiCard)(() => ({
@@ -29,14 +31,13 @@ export const CardContentContainer = styled(MuiCardContent)(() => ({
   height: "50%",
 }));
 
-// export const CardMediaContainer = styled(MuiCardContent)(() => ({
-//   backgroundImage: `url(${logo})`,
-//   position: "absolute",
-//   bottom: "0",
-//   height: "110px",
-//   width: "160px",
-//   margin: "0 0 10px 10px",
-// }));
+export const CardMediaContainer = styled(MuiCardMedia)(() => ({
+  position: "absolute",
+  bottom: "0",
+  height: "110px",
+  width: "160px",
+  margin: "0 0 10px 10px",
+}));
 
 export const CustomButton = styled(MuiButton)(() => ({
   position: "absolute",

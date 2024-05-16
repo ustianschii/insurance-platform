@@ -7,13 +7,14 @@ import {
 } from "./bodyStyles";
 import { OfferCardsContainer } from "./OfferCard/offerCardStyles";
 import { OfferCard } from "./OfferCard/OfferCard";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Card, Typography, CardMedia } from "@mui/material";
 import { OfferCardBig } from "./OfferCardBig/OfferCardBig";
 import firstCardLogo from "../../assets/cardLogo.jpeg";
 import secondCardLogo from "../../assets/car-2b.jpeg";
 import thirdCardLogo from "../../assets/car-3b.jpeg";
 import firstBigCardLogo from "../../assets/pic-block-1-300x213.jpeg";
 import secondBigCardLogo from "../../assets/pic-block-2.jpeg";
+import aboutUsLogo from "../../assets/family.jpeg";
 
 const Body = () => {
   return (
@@ -63,18 +64,26 @@ const Body = () => {
         ></OfferCardBig>
       </OfferCardsContainer>
       <AboutUsContainer>
-        <Box>
+        <Box sx={{ height: "100%", width: "40%" }}>
           <Typography
             variant="body2"
             color="initial"
-            sx={{ color: "#ffad14", fontWeight: "600" }}
+            sx={{ color: "#ffad14", fontWeight: "600", marginBottom: "15px" }}
           >
             DESPRE NOI
           </Typography>
-          <Typography variant="h4" color="initial">
+          <Typography
+            variant="h4"
+            color="initial"
+            sx={{ marginBottom: "20px" }}
+          >
             Ești în mâini bune!
           </Typography>
-          <Typography variant="body1" color="initial">
+          <Typography
+            variant="body1"
+            color="initial"
+            sx={{ padding: "0 20px 0 0" }}
+          >
             La momentul de față, RCA.md este unul dintre cei mai importanți
             participanți de pe piața de asigurări din Republica Moldova. Oferim
             o gama largă de produse de asigurare și depunem un efort zilnic să
@@ -86,9 +95,21 @@ const Body = () => {
             websiteul nostru. Încearcă și tu calculatoarele noastre intuitive,
             sau dă-ne un sunet și te ajutăm noi în cel mai scurt timp!
           </Typography>
-          <Button></Button>
+          <Button variant="outlined" sx={{ margin: "20px 0 0 0" }}>
+            Citeste mai mult
+          </Button>
         </Box>
-        <Box>image</Box>
+
+        <Card elevation={0} sx={{ height: "100%", width: "60%" }}>
+          <CardMedia
+            image={aboutUsLogo}
+            sx={{
+              width: "100%",
+              height: "100%",
+              borderRadius: "15px",
+            }}
+          />
+        </Card>
       </AboutUsContainer>
     </MainWrapper>
   );

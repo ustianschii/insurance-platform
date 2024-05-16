@@ -1,11 +1,11 @@
 import * as React from "react";
 import { FC } from "react";
 import CardActions from "@mui/material/CardActions";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import {
   CardContainer,
   CardContentContainer,
+  CardMediaContainer,
   CustomButton,
 } from "./offerCardBigStyles";
 import { OfferCardBigTypes } from "./offerCardBigTypes";
@@ -35,17 +35,7 @@ export const OfferCardBig: FC<OfferCardBigTypes> = ({
         </Typography>
       </CardContentContainer>
 
-      <CardMedia
-        sx={{
-          position: "absolute",
-          bottom: "0",
-          right: "0",
-          height: "170px",
-          width: "270px",
-          backgroundImage: `url(${logo})`,
-          margin: "0 -10px 0 0",
-        }}
-      />
+      <CardMediaContainer image={logo} />
       <CardActions>
         <CustomButton variant="contained" size="small">
           Calculează preț
