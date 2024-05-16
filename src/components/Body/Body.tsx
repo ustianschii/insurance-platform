@@ -1,36 +1,57 @@
 import React from "react";
 import {
   WalppaperContainer,
-  OffersContainer,
   MainWrapper,
   WallpaperTextContainer,
   AboutUsContainer,
 } from "./bodyStyles";
+import { OfferCardsContainer } from "./OfferCard/offerCardStyles";
 import { OfferCard } from "./OfferCard/OfferCard";
 import { Box, Button, Typography } from "@mui/material";
+import { OfferCardBig } from "./OfferCardBig/OfferCardBig";
+import firstCardLogo from "../../assets/cardLogo.jpeg";
+import secondCardLogo from "../../assets/car-2b.jpeg";
+import thirdCardLogo from "../../assets/car-3b.jpeg";
 
 const Body = () => {
   return (
     <MainWrapper>
       <WalppaperContainer>
         <WallpaperTextContainer>
-          <Typography variant="h3" marginBottom={"30px"}>
+          <Typography variant="h3" marginTop={"75px"}>
             Asigurări online într-o clipă
           </Typography>
-          <Typography variant="h6" width={"45%"}>
+          <Typography
+            variant="h6"
+            width={"45%"}
+            fontSize={"16px"}
+            marginTop={"30px"}
+          >
             Calculează și procură polițe de asigurare pentru automobilul și
             familia ta, într-un mod securizat, interactiv și rapid. Livrăm
             polița în aceeași zi în raza orașului Chișinău!
           </Typography>
         </WallpaperTextContainer>
       </WalppaperContainer>
-      <OffersContainer>
-        <OfferCard></OfferCard>
-        <OfferCard></OfferCard>
-        <OfferCard></OfferCard>
-        <OfferCard></OfferCard>
-        <OfferCard></OfferCard>
-      </OffersContainer>
+      <OfferCardsContainer>
+        <OfferCard
+          title={"RCA"}
+          description="Asigurarea obligatorie a vehiculelor în RM"
+          logo={firstCardLogo}
+        ></OfferCard>
+        <OfferCard
+          title={"Carte Verde"}
+          description="Asigurarea obligatorie a vehiculelor în străinătate"
+          logo={secondCardLogo}
+        ></OfferCard>
+        <OfferCard
+          title={"CASCO"}
+          description="Asigurarea complexă a vehiculelor, cu o gamă largă de opțiuni"
+          logo={thirdCardLogo}
+        ></OfferCard>
+        <OfferCardBig></OfferCardBig>
+        <OfferCardBig></OfferCardBig>
+      </OfferCardsContainer>
       <AboutUsContainer>
         <Box>
           <Typography

@@ -90,7 +90,13 @@ export default function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
-          <Box sx={{ flexGrow: 0 }}>
+          <Box
+            sx={{
+              flexGrow: 0,
+              backgroundColor: "#01ad40",
+              borderRadius: "5px",
+            }}
+          >
             <Tooltip title="Login">
               <Button variant="outlined">Intra</Button>
             </Tooltip>

@@ -1,31 +1,51 @@
 import * as React from "react";
 import { FC } from "react";
 import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { OfferCardWrapper } from "./offerCardStyles";
+import { OfferCardType } from "./offerCardTypes";
+import {
+  CardContainer,
+  CardContentContainer,
+  CustomButton,
+} from "./offerCardStyles";
 
-interface IOfferCard {}
-
-export const OfferCard: FC<IOfferCard> = () => {
+export const OfferCard: FC<OfferCardType> = ({ title, description, logo }) => {
   return (
-    <OfferCardWrapper sx={{ marginTop: "-100px" }}>
-      <CardMedia sx={{ height: 140 }} />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          RCA
+    <CardContainer>
+      <CardContentContainer>
+        <Typography
+          gutterBottom
+          variant="h5"
+          component="div"
+          padding={"10px 0 0 10px"}
+        >
+          {title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Asigurarea obligatorie a vehiculelor în RM
+        <Typography
+          variant="body2"
+          color="text.secondary"
+          padding={"0px 0 0 10px"}
+        >
+          {description}
         </Typography>
-      </CardContent>
+      </CardContentContainer>
+
+      <CardMedia
+        sx={{
+          position: "absolute",
+          bottom: "0",
+          height: "110px",
+          width: "160px",
+          backgroundImage: `url(${logo})`,
+          margin: "0 0 10px 10px",
+        }}
+      />
       <CardActions>
-        <Button variant="outlined" size="small">
+        <CustomButton variant="contained" size="small">
           Calculează preț
-        </Button>
+        </CustomButton>
       </CardActions>
-    </OfferCardWrapper>
+    </CardContainer>
   );
 };
