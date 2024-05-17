@@ -41,26 +41,41 @@ const Body = () => {
           title={"RCA"}
           description="Asigurarea obligatorie a vehiculelor în RM"
           logo={firstCardLogo}
+          badgeTitle={"de la"}
+          badgePrice={283}
+          badgeCurrency="lei"
         ></OfferCard>
         <OfferCard
           title={"Carte Verde"}
           description="Asigurarea obligatorie a vehiculelor în străinătate"
           logo={secondCardLogo}
+          badgeTitle={"de la"}
+          badgePrice={57}
+          badgeCurrency="lei"
         ></OfferCard>
         <OfferCard
           title={"CASCO"}
           description="Asigurarea complexă a vehiculelor, cu o gamă largă de opțiuni"
           logo={thirdCardLogo}
+          badgeTitle={"de la"}
+          badgePrice={3000}
+          badgeCurrency="lei"
         ></OfferCard>
         <OfferCardBig
           title="Asigurarea sănătății"
           description="Asigurarea de sănătate de cea mai înaltă calitate, în RM și când călătorești peste hotare"
           logo={firstBigCardLogo}
+          badgeTitle={"de la"}
+          badgePrice={45}
+          badgeCurrency="lei"
         ></OfferCardBig>
         <OfferCardBig
           title="Asigurarea bunurilor"
           description="Asigurarea pe termen scurt și lung a bunurilor mobile sau imobiliare în RM"
           logo={secondBigCardLogo}
+          badgeTitle={"de la"}
+          badgePrice={201}
+          badgeCurrency="lei"
         ></OfferCardBig>
       </OfferCardsContainer>
       <AboutUsContainer>

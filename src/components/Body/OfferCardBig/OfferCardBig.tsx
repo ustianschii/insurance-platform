@@ -9,15 +9,24 @@ import {
   CustomButton,
 } from "./offerCardBigStyles";
 import { OfferCardBigTypes } from "./offerCardBigTypes";
+import { CustomBadge } from "../../common/Badge/CustomBadge";
 
 export const OfferCardBig: FC<OfferCardBigTypes> = ({
   title,
   description,
   logo,
+  badgeTitle,
+  badgePrice,
+  badgeCurrency,
 }) => {
   return (
     <CardContainer>
       <CardContentContainer>
+        <CustomBadge
+          badgeTitle={badgeTitle}
+          badgePrice={badgePrice}
+          badgeCurrency={badgeCurrency}
+        ></CustomBadge>
         <Typography
           gutterBottom
           variant="h5"
