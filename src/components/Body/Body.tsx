@@ -3,18 +3,19 @@ import {
   WalppaperContainer,
   MainWrapper,
   WallpaperTextContainer,
-  AboutUsContainer,
 } from "./bodyStyles";
+import { AboutUsWrapper } from "./AboutUs/AboutUs";
 import { OfferCardsContainer } from "./OfferCard/offerCardStyles";
 import { OfferCard } from "./OfferCard/OfferCard";
-import { Box, Button, Card, Typography, CardMedia } from "@mui/material";
+import { Box, Typography, Container, SvgIcon } from "@mui/material";
 import { OfferCardBig } from "./OfferCardBig/OfferCardBig";
 import firstCardLogo from "../../assets/cardLogo.jpeg";
 import secondCardLogo from "../../assets/car-2b.jpeg";
 import thirdCardLogo from "../../assets/car-3b.jpeg";
 import firstBigCardLogo from "../../assets/pic-block-1-300x213.jpeg";
 import secondBigCardLogo from "../../assets/pic-block-2.jpeg";
-import aboutUsLogo from "../../assets/family.jpeg";
+import ourWarantyBlockBG from "../../assets/bg-our-waranty.png";
+import BusinessIcon from "@mui/icons-material/Business";
 
 const Body = () => {
   return (
@@ -36,7 +37,7 @@ const Body = () => {
           </Typography>
         </WallpaperTextContainer>
       </WalppaperContainer>
-      <OfferCardsContainer>
+      <OfferCardsContainer disableGutters>
         <OfferCard
           title={"RCA"}
           description="Asigurarea obligatorie a vehiculelor în RM"
@@ -78,54 +79,102 @@ const Body = () => {
           badgeCurrency="lei"
         ></OfferCardBig>
       </OfferCardsContainer>
-      <AboutUsContainer>
-        <Box sx={{ height: "100%", width: "40%" }}>
-          <Typography
-            variant="body2"
-            color="initial"
-            sx={{ color: "#ffad14", fontWeight: "600", marginBottom: "15px" }}
-          >
-            DESPRE NOI
-          </Typography>
-          <Typography
-            variant="h4"
-            color="initial"
-            sx={{ marginBottom: "20px" }}
-          >
-            Ești în mâini bune!
-          </Typography>
+      <AboutUsWrapper />
+      <Container
+        disableGutters
+        sx={{
+          height: "550px",
+          backgroundColor: "#1d2750",
+          backgroundImage: `url(${ourWarantyBlockBG})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          borderRadius: "15px",
+        }}
+      >
+        <Box
+          sx={{
+            display: "block",
+            height: "100%",
+            paddingY: "50px",
+            paddingX: "70px",
+          }}
+        >
           <Typography
             variant="body1"
-            color="initial"
-            sx={{ padding: "0 20px 0 0" }}
-          >
-            La momentul de față, RCA.md este unul dintre cei mai importanți
-            participanți de pe piața de asigurări din Republica Moldova. Oferim
-            o gama largă de produse de asigurare și depunem un efort zilnic să
-            menținem același nivel de profesionalism, disponibilitate și
-            dedicație față de clienții noștri, pe care l-am oferit din 2010
-            încoace. Oferim instrumente utile, flexibile și ușor de utilizat, ca
-            să poți procura polița de asigurare de care ai nevoie timp de câteva
-            minute, de la companii de asigurare de încredere, direct pe
-            websiteul nostru. Încearcă și tu calculatoarele noastre intuitive,
-            sau dă-ne un sunet și te ajutăm noi în cel mai scurt timp!
-          </Typography>
-          <Button variant="outlined" sx={{ margin: "20px 0 0 0" }}>
-            Citeste mai mult
-          </Button>
-        </Box>
-
-        <Card elevation={0} sx={{ height: "100%", width: "60%" }}>
-          <CardMedia
-            image={aboutUsLogo}
+            color="white"
+            textAlign={"center"}
             sx={{
-              width: "100%",
-              height: "100%",
-              borderRadius: "15px",
+              color: "#fa7327",
+              fontWeight: "bold",
+              fontSize: "13px",
+              marginBottom: "20px",
             }}
-          />
-        </Card>
-      </AboutUsContainer>
+          >
+            SERVICE
+          </Typography>
+          <Typography
+            variant="h3"
+            color="white"
+            textAlign={"center"}
+            margin={"0 0 25px 0"}
+          >
+            Noi garantăm
+          </Typography>
+
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: "wrap",
+              height: "320px",
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                height: "50%",
+                width: "33%",
+                padding: "20px",
+                marginBottom: "20px",
+              }}
+            >
+              <SvgIcon
+                sx={{
+                  height: "70px",
+                  width: "65px",
+                  marginRight: "10px",
+                  color: "#00cd4a",
+                }}
+              >
+                <BusinessIcon />
+              </SvgIcon>
+              <Box sx={{ textWrap: "wrap" }}>
+                <Typography
+                  variant="body1"
+                  color="white"
+                  sx={{ height: "30%", fontWeight: "bold", fontSize: "20px" }}
+                >
+                  Posibilitatea de a alege
+                </Typography>
+                <Typography
+                  variant="body1"
+                  color="white"
+                  sx={{ textWrap: "wrap", fontSize: "15px" }}
+                >
+                  Alege compania de asigurări în care ai cea mai multă
+                  încredere.
+                </Typography>
+              </Box>
+            </Box>
+            <Box sx={{ height: "50%", width: "33%" }}>Livrare gratuită</Box>
+            <Box sx={{ height: "50%", width: "33%" }}>Istorie de calitate</Box>
+            <Box sx={{ height: "50%", width: "33%" }}>
+              Disponibilitate maximă
+            </Box>
+            <Box sx={{ height: "50%", width: "33%" }}>Acces comod</Box>
+            <Box sx={{ height: "50%", width: "33%" }}>Achitare sigură</Box>
+          </Box>
+        </Box>
+      </Container>
     </MainWrapper>
   );
 };

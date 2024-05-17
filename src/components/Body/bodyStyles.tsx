@@ -1,8 +1,4 @@
-import {
-  Box as MuiBox,
-  Container as MuiContainer,
-  styled,
-} from "@mui/material";
+import { Box as MuiBox, styled } from "@mui/material";
 import logo from "../../assets/body-image.jpeg";
 
 export const MainWrapper = styled(MuiBox)(() => ({
@@ -21,10 +17,4 @@ export const WallpaperTextContainer = styled(MuiBox)(() => ({
   paddingLeft: "20%",
   paddingTop: "5%",
   color: "white",
-}));
-
-export const AboutUsContainer = styled(MuiContainer)(() => ({
-  display: "flex",
-  position: "relative",
-  height: "450px",
 }));
