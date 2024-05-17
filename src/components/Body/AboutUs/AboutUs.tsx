@@ -1,10 +1,14 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import { CustomButton, AboutUsImgBox, AboutUs } from "../AboutUs/aboutUsStyles";
+import {
+  CustomButton,
+  AboutUsImgBox,
+  AboutUsWrapper,
+} from "../AboutUs/aboutUsStyles";
 
-export const AboutUsWrapper = () => {
+export const AboutUs = () => {
   return (
-    <AboutUs disableGutters>
+    <AboutUsWrapper disableGutters>
       <Box height={"100%"} width={"40%"}>
         <Typography
           variant="body2"
@@ -34,6 +38,6 @@ export const AboutUsWrapper = () => {
         </CustomButton>
       </Box>
       <AboutUsImgBox />
-    </AboutUs>
+    </AboutUsWrapper>
   );
 };

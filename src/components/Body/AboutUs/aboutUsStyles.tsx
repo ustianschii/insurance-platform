@@ -6,7 +6,7 @@ import {
 } from "@mui/material";
 import aboutUsLogo from "../../../assets/family.jpeg";
 
-export const AboutUs = styled(MuiContainer)(() => ({
+export const AboutUsWrapper = styled(MuiContainer)(() => ({
   display: "flex",
   position: "relative",
   height: "450px",
