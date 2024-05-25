@@ -15,6 +15,7 @@ import thirdCardLogo from "../../assets/car-3b.jpeg";
 import firstBigCardLogo from "../../assets/pic-block-1-300x213.jpeg";
 import secondBigCardLogo from "../../assets/pic-block-2.jpeg";
 import { OurWaranty } from "./OurWaranty/OurWaranty";
+import Reviews from "./Reviews/Reviews";
 
 const Body = () => {
   return (
@@ -80,6 +81,7 @@ const Body = () => {
       </OfferCardsContainer>
       <AboutUs />
       <OurWaranty />
+      <Reviews />
     </MainWrapper>
   );
 };

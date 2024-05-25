@@ -12,6 +12,7 @@ export const OurWarantyWrapper = styled(MuiContainer)(() => ({
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   borderRadius: "15px",
+  marginBottom: "100px",
 }));
 
 export const CardsContainer = styled(MuiBox)(() => ({
