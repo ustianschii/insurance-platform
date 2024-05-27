@@ -15,6 +15,7 @@ export const ReviewsWrapper = styled(MuiContainer)(() => ({
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   borderRadius: "15px",
+  marginBottom: "100px",
 }));
 
 export const QuoteIcon = styled(FormatQuoteIcon)(() => ({
@@ -30,6 +31,7 @@ export const ReviewsBgRightWrapper = styled(MuiBox)(() => ({
   width: "600px",
   backgroundImage: `url(${reviewsBlockBgRight})`,
   margin: "-10px 0 0 -60px",
+  borderEndEndRadius: "15px",
 }));
 
 export const AvatarSmall = styled(MuiBox)(() => ({

@@ -9,7 +9,7 @@ import {
 export const AboutUs = () => {
   return (
     <AboutUsWrapper disableGutters>
-      <Box height={"100%"} width={"40%"}>
+      <Box width={"40%"}>
         <Typography
           variant="body2"
           color="#ffad14"

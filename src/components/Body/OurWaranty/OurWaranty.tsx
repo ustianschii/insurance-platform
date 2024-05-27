@@ -12,13 +12,12 @@ import PaymentIcon from "@mui/icons-material/Payment";
 export const OurWaranty = () => {
   return (
     <OurWarantyWrapper disableGutters>
-      <Box display={"block"} height={"100%"} padding={"50px 70px 50px 70px"}>
+      <Box height={"100%"} padding={"50px 70px 50px 70px"}>
         <Typography
-          variant="body1"
+          variant="body2"
           color="#fa7327"
           textAlign={"center"}
           fontWeight={"bold"}
-          fontSize={"13px"}
           marginBottom={"20px"}
         >
           SERVICE

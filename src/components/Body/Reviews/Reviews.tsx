@@ -22,7 +22,7 @@ import reviewBlockAvatar8 from "../../../assets/pic-user-8.webp";
 const Reviews = () => {
   return (
     <ReviewsWrapper disableGutters>
-      <Box sx={{ width: "60%", padding: "40px 0 40px 40px" }}>
+      <Box width={"60%"} p={"40px 0 40px 40px"}>
         <Typography
           variant="body2"
           color="#ffad14"
