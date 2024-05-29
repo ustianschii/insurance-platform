@@ -1,9 +1,12 @@
 import React from "react";
-import { Box, Button, TextField, Typography } from "@mui/material";
+import { Box, TextField, Typography } from "@mui/material";
 import { CustomDivider } from "../Blog/blogStyles";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-import fastOrderCarLogo from "../../../assets/fastOrder-car-logo.webp";
-import { CustomTextField, FastOrderWrapper } from "./fastOrderStyles";
+import {
+  CustomButton,
+  FastOrderLogo,
+  FastOrderWrapper,
+} from "./fastOrderStyles";
 
 const FastOrder = () => {
   return (
@@ -16,7 +19,7 @@ const FastOrder = () => {
           Lasă un număr de telefon și te vom contacta în 5 minute.
         </Typography>
         <Box display={"flex"} justifyContent={"space-between"} width={"95%"}>
-          <CustomTextField
+          <TextField
             size="small"
             id="outlined-basic"
             label="Introdu numele tău"
@@ -25,14 +28,14 @@ const FastOrder = () => {
               style: { color: "gray" },
             }}
             sx={{
-              bgcolor: "white",
+              backgroundColor: "white",
               borderRadius: "8px",
               ".MuiInputBase-root::after": {
                 border: "1px solid #01ad40",
               },
             }}
           />
-          <CustomTextField
+          <TextField
             size="small"
             id="outlined-basic"
             label="Numărul de telefon"
@@ -41,33 +44,22 @@ const FastOrder = () => {
               style: { color: "gray" },
             }}
             sx={{
-              bgcolor: "white",
+              backgroundColor: "white",
               borderRadius: "8px",
               ".MuiInputBase-root::after": {
                 border: "1px solid #01ad40",
               },
             }}
           />
-          <Button
-            variant="contained"
-            sx={{ bgcolor: "#00cd4a", borderRadius: "8px" }}
-          >
+          <CustomButton variant="contained">
             Solicită
             <CustomDivider orientation="vertical" flexItem />
             <KeyboardArrowRightIcon />
-          </Button>
+          </CustomButton>
         </Box>
       </Box>
       <Box width={"400px"} height={"250px"}>
-        <Box
-          sx={{
-            backgroundImage: `url(${fastOrderCarLogo})`,
-            height: "350px",
-            width: "550px",
-            backgroundSize: "cover",
-            marginTop: "-15px",
-          }}
-        />
+        <FastOrderLogo />
       </Box>
     </FastOrderWrapper>
   );

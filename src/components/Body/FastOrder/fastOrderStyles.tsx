@@ -1,10 +1,11 @@
 import {
   Box as MuiBox,
   Container as MuiContainer,
-  TextField as MuiTextField,
+  Button as MuiButton,
   styled,
 } from "@mui/material";
 import fastOrderBG from "../../../assets/bg-fast-order.png";
+import fastOrderCarLogo from "../../../assets/fastOrder-car-logo.webp";
 
 export const FastOrderWrapper = styled(MuiContainer)(() => ({
   display: "flex",
@@ -17,4 +18,15 @@ export const FastOrderWrapper = styled(MuiContainer)(() => ({
   marginBottom: "100px",
 }));
 
-export const CustomTextField = styled(MuiTextField)(() => ({}));
+export const CustomButton = styled(MuiButton)(() => ({
+  backgroundColor: "#00cd4a",
+  borderRadius: "8px",
+}));
+
+export const FastOrderLogo = styled(MuiBox)(() => ({
+  backgroundImage: `url(${fastOrderCarLogo})`,
+  height: "350px",
+  width: "550px",
+  backgroundSize: "cover",
+  marginTop: "-15px",
+}));
