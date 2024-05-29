@@ -9,6 +9,7 @@ import blogBigArticleLogo from "../../../assets/blog-big-article-logo.jpeg";
 
 export const BlogWrapper = styled(MuiContainer)(() => ({
   height: "700px",
+  marginBottom: "100px",
 }));
 
 export const BigArticleLogo = styled(MuiBox)(() => ({

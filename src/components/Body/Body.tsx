@@ -17,6 +17,7 @@ import secondBigCardLogo from "../../assets/pic-block-2.jpeg";
 import { OurWaranty } from "./OurWaranty/OurWaranty";
 import Reviews from "./Reviews/Reviews";
 import Blog from "./Blog/Blog";
+import FastOrder from "./FastOrder/FastOrder";
 
 const Body = () => {
   return (
@@ -84,6 +85,7 @@ const Body = () => {
       <OurWaranty />
       <Reviews />
       <Blog />
+      <FastOrder />
     </MainWrapper>
   );
 };
