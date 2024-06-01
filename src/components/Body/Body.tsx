@@ -18,6 +18,7 @@ import { OurWaranty } from "./OurWaranty/OurWaranty";
 import Reviews from "./Reviews/Reviews";
 import Blog from "./Blog/Blog";
 import FastOrder from "./FastOrder/FastOrder";
+import Reminder from "./Reminder/Reminder";
 
 const Body = () => {
   return (
@@ -86,6 +87,7 @@ const Body = () => {
       <Reviews />
       <Blog />
       <FastOrder />
+      <Reminder />
     </MainWrapper>
   );
 };

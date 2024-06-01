@@ -3,6 +3,7 @@ import logo from "../../assets/body-image.jpeg";
 
 export const MainWrapper = styled(MuiBox)(() => ({
   maxWidth: "100%",
+  backgroundColor: "#cacacaa",
 }));
 
 export const WalppaperContainer = styled(MuiBox)(() => ({

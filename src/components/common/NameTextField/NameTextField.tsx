@@ -1,22 +1,15 @@
 import React from "react";
-import { TextField } from "@mui/material";
+import { CustomTextField } from "./nameTextFieldStyles";
 
 const NameTextField = () => {
   return (
-    <TextField
+    <CustomTextField
       size="small"
       id="outlined-basic"
       label="Introdu numele tău"
-      variant="filled"
+      variant="outlined"
       InputLabelProps={{
         style: { color: "gray" },
-      }}
-      sx={{
-        backgroundColor: "white",
-        borderRadius: "8px",
-        ".MuiInputBase-root::after": {
-          border: "1px solid #01ad40",
-        },
       }}
     />
   );

@@ -1,22 +1,15 @@
 import React from "react";
-import { TextField } from "@mui/material";
+import { CustomTextField } from "./phoneNumberTextFieldStyles";
 
 const PhoneNumberTextField = () => {
   return (
-    <TextField
+    <CustomTextField
       size="small"
       id="outlined-basic"
       label="Numărul de telefon"
-      variant="filled"
+      variant="outlined"
       InputLabelProps={{
         style: { color: "gray" },
-      }}
-      sx={{
-        backgroundColor: "white",
-        borderRadius: "8px",
-        ".MuiInputBase-root::after": {
-          border: "1px solid #01ad40",
-        },
       }}
     />
   );
