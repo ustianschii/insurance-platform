@@ -1,13 +1,20 @@
 import React from "react";
 import Partners from "./Partners/Partners";
 import { FooterWrapper } from "./footerStyles";
-import { Divider } from "@mui/material";
+import { Container, Divider } from "@mui/material";
+import Links from "./Links/Links";
+import Copyright from "./Copyright/Copyright";
 
 const Footer = () => {
   return (
     <FooterWrapper>
       <Partners />
-      <Divider variant="fullWidth"></Divider>
+      <Container disableGutters>
+        <Divider variant="fullWidth" />
+      </Container>
+      <Links />
+      <Divider variant="fullWidth" />
+      <Copyright />
     </FooterWrapper>
   );
 };
