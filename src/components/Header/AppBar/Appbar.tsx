@@ -8,7 +8,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import { AppBarCustom, SvgIconCustom, ToolbarCustom } from "../headerStyles";
+import { AppBarCustom, SvgIconCustom, ToolbarCustom } from "./appbarStyles";
 
 const pages = [
   "Casco",

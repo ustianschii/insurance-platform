@@ -1,6 +1,5 @@
 import * as React from "react";
 import { FC } from "react";
-import CardActions from "@mui/material/CardActions";
 import Typography from "@mui/material/Typography";
 import {
   CardContainer,
@@ -39,17 +38,16 @@ export const OfferCardBig: FC<OfferCardBigTypes> = ({
           variant="body2"
           color="text.secondary"
           padding={"0px 0 0 10px"}
+          maxWidth={"55%"}
         >
           {description}
         </Typography>
       </CardContentContainer>
 
       <CardMediaContainer image={logo} />
-      <CardActions>
-        <CustomButton variant="contained" size="small">
-          Calculează preț
-        </CustomButton>
-      </CardActions>
+      <CustomButton variant="contained" size="small">
+        Calculează preț
+      </CustomButton>
     </CardContainer>
   );
 };

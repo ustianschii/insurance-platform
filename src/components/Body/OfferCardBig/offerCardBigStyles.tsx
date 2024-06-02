@@ -19,7 +19,7 @@ export const CardContainer = styled(MuiCard)(() => ({
 export const CardContentContainer = styled(MuiCardContent)(() => ({
   display: "block",
   width: "100%",
-  height: "50%",
+  height: "100%",
 }));
 
 export const CardMediaContainer = styled(MuiCardMedia)(() => ({
