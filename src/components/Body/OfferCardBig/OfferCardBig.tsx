@@ -31,11 +31,12 @@ export const OfferCardBig: FC<OfferCardBigTypes> = ({
           variant="h5"
           component="div"
           padding={"10px 0 0 10px"}
+          marginBottom={"10px"}
         >
           {title}
         </Typography>
         <Typography
-          variant="body2"
+          variant="body1"
           color="text.secondary"
           padding={"0px 0 0 10px"}
           maxWidth={"55%"}

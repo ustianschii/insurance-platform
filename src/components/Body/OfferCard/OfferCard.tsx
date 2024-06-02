@@ -35,7 +35,7 @@ export const OfferCard: FC<OfferCardType> = ({
           {title}
         </Typography>
         <Typography
-          variant="body2"
+          variant="body1"
           color="text.secondary"
           padding={"0px 0 0 10px"}
         >

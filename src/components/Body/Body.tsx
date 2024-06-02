@@ -29,9 +29,9 @@ const Body = () => {
             Asigurări online într-o clipă
           </Typography>
           <Typography
-            variant="h6"
             width={"45%"}
-            fontSize={"16px"}
+            fontSize={"17px"}
+            fontWeight={"500"}
             marginTop={"30px"}
           >
             Calculează și procură polițe de asigurare pentru automobilul și

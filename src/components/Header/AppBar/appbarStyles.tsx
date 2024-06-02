@@ -15,17 +15,15 @@ export const AppBarContainer = styled(MuiAppBar)(() => ({
 
 export const AppBarCustom = styled(MuiAppBar)(() => ({
   position: "static",
-  ".MuiContainer-root": { backgroundColor: "white", maxWidth: "75%" },
+  ".MuiContainer-root": { backgroundColor: "white", maxWidth: "68%" },
   ".MuiButtonBase-root": { color: "black", fontWeight: "500" },
-  ".MuiButtonBase-root:hover": { color: "green", fontWeight: "bold" },
+  ".MuiButtonBase-root:hover": { color: "green", fontWeight: "600" },
 }));
 
 export const ToolbarCustom = styled(MuiToolbar)(() => ({
-  ".MuiToolbar-root": {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
 }));
 
 export const SvgIconCustom = styled(MuiSvgIcon)(() => ({
@@ -34,4 +32,5 @@ export const SvgIconCustom = styled(MuiSvgIcon)(() => ({
   backgroundRepeat: "no-repeat",
   height: "75px",
   width: "150px",
+  marginLeft: "-50px",
 }));
