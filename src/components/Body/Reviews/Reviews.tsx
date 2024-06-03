@@ -2,14 +2,10 @@ import React from "react";
 import {
   AvatarBig,
   AvatarSmall,
-  QuoteIcon,
   ReviewsBgRightWrapper,
   ReviewsWrapper,
 } from "./reviewsStyles";
-import { Box, Typography, Divider, IconButton } from "@mui/material";
-import StarIcon from "@mui/icons-material/Star";
-import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
-import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import { Box, Typography } from "@mui/material";
 import reviewBlockAvatar1 from "../../../assets/pic-user-1.webp";
 import reviewBlockAvatar2 from "../../../assets/pic-user-2.webp";
 import reviewBlockAvatar3 from "../../../assets/pic-user-3.webp";
@@ -18,6 +14,7 @@ import reviewBlockAvatar5 from "../../../assets/pic-user-5.webp";
 import reviewBlockAvatar6 from "../../../assets/pic-user-6.webp";
 import reviewBlockAvatar7 from "../../../assets/pic-user-7.webp";
 import reviewBlockAvatar8 from "../../../assets/pic-user-8.webp";
+import ReviewItem from "./ReviewItem/ReviewItem";
 
 const Reviews = () => {
   return (
@@ -39,58 +36,7 @@ const Reviews = () => {
         >
           Ce spun clienții noștri despre noi
         </Typography>
-        <Box display={"flex"} height={"50%"}>
-          <QuoteIcon />
-          <Box display={"block"} width={"100%"}>
-            <Typography>
-              <Typography marginBottom={"10px"}>
-                Personal foarte prietenos. Mi-au pregatit asigurarea după apel
-                telefonic, deși erau deja după grafic de o jumătate de oră.{" "}
-              </Typography>
-              <Typography marginBottom={"10px"}>
-                Am primit și asigurarea cu livrare în aceeași zi, spre marea mea
-                surprindere. De atunci cumpăr toate asigurările personale și
-                pentru afacere pe RCA.MD!
-              </Typography>
-              <Typography marginBottom={"30px"}>
-                Recomand cu încredere tuturor.
-              </Typography>
-              <Divider />
-            </Typography>
-            <Typography marginTop={"10px"} fontWeight={"bold"}>
-              Alexandru
-            </Typography>
-            <Box color={"#fa7327"} m={"5px 0 0 -5px"}>
-              <StarIcon />
-              <StarIcon />
-              <StarIcon />
-              <StarIcon />
-              <StarIcon />
-            </Box>
-          </Box>
-        </Box>
-
-        <Box display={"flex"} m={"15px 0 0 58px"}>
-          <IconButton>
-            <KeyboardArrowLeftIcon />
-          </IconButton>
-          <Divider
-            orientation="vertical"
-            flexItem
-            sx={{ opacity: "0.6", margin: "0 10px 0 10px" }}
-          />
-          <IconButton>
-            <KeyboardArrowRightIcon />
-          </IconButton>
-          <Typography
-            display={"flex"}
-            marginLeft={"40px"}
-            alignItems={"center"}
-            fontWeight={"bold"}
-          >
-            01/03
-          </Typography>
-        </Box>
+        <ReviewItem />
       </Box>
       <ReviewsBgRightWrapper>
         <Box width={"500px"} height={"100%"} ml={"75px"}>

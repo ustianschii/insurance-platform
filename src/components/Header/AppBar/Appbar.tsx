@@ -8,9 +8,8 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import { AppBarCustom, SvgIconCustom, ToolbarCustom } from "./appbarStyles";
-import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-import { Icon } from "@mui/material";
+import { AppBarCustom, AppBarLogo, PhoneIcon } from "./appbarStyles";
+import { Toolbar } from "@mui/material";
 
 const pages = [
   "Casco",
@@ -37,7 +36,7 @@ export default function ResponsiveAppBar() {
   return (
     <AppBarCustom>
       <Container maxWidth="xl">
-        <ToolbarCustom>
+        <Toolbar>
           <IconButton
             size="large"
             aria-controls="menu-appbar"
@@ -52,7 +51,7 @@ export default function ResponsiveAppBar() {
             />
           </IconButton>
           <IconButton sx={{ "&:hover": { backgroundColor: "transparent" } }}>
-            <SvgIconCustom />
+            <AppBarLogo />
           </IconButton>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <Menu
@@ -92,18 +91,18 @@ export default function ResponsiveAppBar() {
             ))}
           </Box>
           <Box display={"flex"} color={"#fa7327"}>
-            <Icon>
-              <LocalPhoneIcon fontSize="medium" />
-            </Icon>
-            <Typography
-              variant="body1"
-              color="#fa7327"
-              fontWeight={"bold"}
-              fontSize={"19px"}
-              margin={"0 20px 0 10px"}
-            >
-              0(60)544111
-            </Typography>
+            <IconButton href="tel:+37360544111">
+              <PhoneIcon />
+              <Typography
+                variant="body1"
+                color="#fa7327"
+                fontWeight={"bold"}
+                fontSize={"23px"}
+                margin={"0 20px 0 10px"}
+              >
+                0(60)544111
+              </Typography>
+            </IconButton>
           </Box>
           <Box
             sx={{
@@ -116,7 +115,7 @@ export default function ResponsiveAppBar() {
               <Button variant="outlined">Intra</Button>
             </Tooltip>
           </Box>
-        </ToolbarCustom>
+        </Toolbar>
       </Container>
     </AppBarCustom>
   );

@@ -20,16 +20,16 @@ const HeaderTopBar = () => {
           marginRight={"30px"}
           justifyContent={"space-between"}
         >
-          <IconButton>
+          <IconButton href="https://m.me/cristi.ustianski?hash=AbZOTTEZ33jzlfMo&source=qr_link_share">
             <MessengerLogo />
           </IconButton>
-          <IconButton>
+          <IconButton href="https://wa.me/qr/KU3AP3YE375IO1">
             <WhatsappLogo />
           </IconButton>
           <IconButton>
             <ViberLogo />
           </IconButton>
-          <IconButton>
+          <IconButton href="https://t.me/cuser22">
             <TelegramLogo />
           </IconButton>
         </Box>

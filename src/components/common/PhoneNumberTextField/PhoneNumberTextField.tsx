@@ -4,8 +4,8 @@ import { CustomTextField } from "./phoneNumberTextFieldStyles";
 const PhoneNumberTextField = () => {
   return (
     <CustomTextField
+      type="tel"
       size="small"
-      id="outlined-basic"
       label="Numărul de telefon"
       variant="outlined"
       InputLabelProps={{
