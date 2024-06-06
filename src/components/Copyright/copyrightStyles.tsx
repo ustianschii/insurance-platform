@@ -3,8 +3,8 @@ import {
   Container as MuiContainer,
   styled,
 } from "@mui/material";
-import visa from "../../../assets/visa.svg";
-import mastercard from "../../../assets/mastercard.svg";
+import visa from "../../assets/visa.svg";
+import mastercard from "../../assets/mastercard.svg";
 
 export const CopyrightWrapper = styled(MuiContainer)(() => ({
   display: "flex",

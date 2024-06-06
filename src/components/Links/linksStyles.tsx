@@ -4,7 +4,7 @@ import {
   Link as MuiLink,
   styled,
 } from "@mui/material";
-import logo from "../../../assets/rca-md1.jpeg";
+import logo from "../../assets/rca-md1.jpeg";
 
 export const LinksWrapper = styled(MuiContainer)(() => ({
   display: "flex",

@@ -1,9 +1,9 @@
 import React from "react";
-import Partners from "./Partners/Partners";
+import Partners from "../Partners/Partners";
 import { FooterWrapper } from "./footerStyles";
 import { Container, Divider } from "@mui/material";
-import Links from "./Links/Links";
-import Copyright from "./Copyright/Copyright";
+import Links from "../Links/Links";
+import Copyright from "../Copyright/Copyright";
 
 const Footer = () => {
   return (
