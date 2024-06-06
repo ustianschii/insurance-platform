@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import { FastOrderLogo, FastOrderWrapper } from "./fastOrderStyles";
-import NameTextField from "../../common/NameTextField/NameTextField";
-import PhoneNumberTextField from "../../common/PhoneNumberTextField/PhoneNumberTextField";
-import SendButton from "../../common/SendButton/SendButton";
+import NameTextField from "../common/NameTextField/NameTextField";
+import PhoneNumberTextField from "../common/PhoneNumberTextField/PhoneNumberTextField";
+import SendButton from "../common/SendButton/SendButton";
 
 const FastOrder = () => {
   return (

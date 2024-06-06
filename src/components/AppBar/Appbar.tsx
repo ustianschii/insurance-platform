@@ -10,6 +10,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { AppBarCustom, AppBarLogo, PhoneIcon } from "./appbarStyles";
 import { Toolbar } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const pages = [
   "Casco",
@@ -51,7 +52,9 @@ export default function ResponsiveAppBar() {
             />
           </IconButton>
           <IconButton sx={{ "&:hover": { backgroundColor: "transparent" } }}>
-            <AppBarLogo />
+            <Link to="/">
+              <AppBarLogo />
+            </Link>
           </IconButton>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <Menu
@@ -80,15 +83,24 @@ export default function ResponsiveAppBar() {
             </Menu>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, display: "block" }}
-              >
-                {page}
-              </Button>
-            ))}
+            <Link to="/calculator">
+              <Button>Casco</Button>
+            </Link>
+            <Link to="/calculator">
+              <Button>RCA</Button>
+            </Link>
+            <Link to="/calculator">
+              <Button>Carte Verde</Button>
+            </Link>
+            <Link to="/calculator">
+              <Button>Asigurarea sănătății</Button>
+            </Link>
+            <Link to="/calculator">
+              <Button>Asigurarea bunurilor</Button>
+            </Link>
+            <Link to="/calculator">
+              <Button>Contacte</Button>
+            </Link>
           </Box>
           <Box display={"flex"} color={"#fa7327"}>
             <IconButton href="tel:+37360544111">

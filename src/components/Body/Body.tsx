@@ -4,21 +4,21 @@ import {
   MainWrapper,
   WallpaperTextContainer,
 } from "./bodyStyles";
-import { AboutUs } from "./AboutUs/AboutUs";
-import { OfferCardsContainer } from "./OfferCard/offerCardStyles";
-import { OfferCard } from "./OfferCard/OfferCard";
+import { AboutUs } from "../AboutUs/AboutUs";
+import { OfferCardsContainer } from "../OfferCard/offerCardStyles";
+import { OfferCard } from "../OfferCard/OfferCard";
 import { Typography } from "@mui/material";
-import { OfferCardBig } from "./OfferCardBig/OfferCardBig";
+import { OfferCardBig } from "../OfferCardBig/OfferCardBig";
 import firstCardLogo from "../../assets/cardLogo.jpeg";
 import secondCardLogo from "../../assets/car-2b.jpeg";
 import thirdCardLogo from "../../assets/car-3b.jpeg";
 import firstBigCardLogo from "../../assets/pic-block-1-300x213.jpeg";
 import secondBigCardLogo from "../../assets/pic-block-2.jpeg";
-import { OurWaranty } from "./OurWaranty/OurWaranty";
-import Reviews from "./Reviews/Reviews";
-import Blog from "./Blog/Blog";
-import FastOrder from "./FastOrder/FastOrder";
-import Reminder from "./Reminder/Reminder";
+import { OurWaranty } from "../OurWaranty/OurWaranty";
+import Reviews from "../Reviews/Reviews";
+import Blog from "../Blog/Blog";
+import FastOrder from "../FastOrder/FastOrder";
+import Reminder from "../Reminder/Reminder";
 
 const Body = () => {
   return (

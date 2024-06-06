@@ -3,12 +3,12 @@ import {
   Box as MuiBox,
   styled,
 } from "@mui/material";
-import messenger from "../../../assets/facebook-messenger_512x512.png";
-import whatsapp from "../../../assets/whatsapp_512x512.png";
-import viber from "../../../assets/viber.png";
-import telegram from "../../../assets/telegram.svg";
-import romanian from "../../../assets/flag-ro.svg";
-import russian from "../../../assets/flag-ru.svg";
+import messenger from "../../assets/facebook-messenger_512x512.png";
+import whatsapp from "../../assets/whatsapp_512x512.png";
+import viber from "../../assets/viber.png";
+import telegram from "../../assets/telegram.svg";
+import romanian from "../../assets/flag-ro.svg";
+import russian from "../../assets/flag-ru.svg";
 
 export const AppBarContainer = styled(MuiContainer)(() => ({
   display: "flex",

@@ -4,8 +4,8 @@ import {
   styled,
 } from "@mui/material";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
-import reviewsBlockBG from "../../../assets/bg-reviews-block2.png";
-import reviewsBlockBgRight from "../../../assets/reviews-block-bg.jpeg";
+import reviewsBlockBG from "../../assets/bg-reviews-block2.png";
+import reviewsBlockBgRight from "../../assets/reviews-block-bg.jpeg";
 
 export const ReviewsWrapper = styled(MuiContainer)(() => ({
   display: "flex",

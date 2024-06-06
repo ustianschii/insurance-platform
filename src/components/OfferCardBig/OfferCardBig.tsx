@@ -8,7 +8,7 @@ import {
   CustomButton,
 } from "./offerCardBigStyles";
 import { OfferCardBigTypes } from "./offerCardBigTypes";
-import { CustomBadge } from "../../common/Badge/CustomBadge";
+import { CustomBadge } from "../common/Badge/CustomBadge";
 
 export const OfferCardBig: FC<OfferCardBigTypes> = ({
   title,

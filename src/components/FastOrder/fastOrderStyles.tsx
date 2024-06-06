@@ -3,8 +3,8 @@ import {
   Container as MuiContainer,
   styled,
 } from "@mui/material";
-import fastOrderBG from "../../../assets/bg-fast-order.png";
-import fastOrderCarLogo from "../../../assets/fastOrder-car-logo.webp";
+import fastOrderBG from "../../assets/bg-fast-order.png";
+import fastOrderCarLogo from "../../assets/fastOrder-car-logo.webp";
 
 export const FastOrderWrapper = styled(MuiContainer)(() => ({
   display: "flex",

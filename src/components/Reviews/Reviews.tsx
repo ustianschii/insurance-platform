@@ -6,14 +6,14 @@ import {
   ReviewsWrapper,
 } from "./reviewsStyles";
 import { Box, Typography } from "@mui/material";
-import reviewBlockAvatar1 from "../../../assets/pic-user-1.webp";
-import reviewBlockAvatar2 from "../../../assets/pic-user-2.webp";
-import reviewBlockAvatar3 from "../../../assets/pic-user-3.webp";
-import reviewBlockAvatar4 from "../../../assets/pic-user-4.webp";
-import reviewBlockAvatar5 from "../../../assets/pic-user-5.webp";
-import reviewBlockAvatar6 from "../../../assets/pic-user-6.webp";
-import reviewBlockAvatar7 from "../../../assets/pic-user-7.webp";
-import reviewBlockAvatar8 from "../../../assets/pic-user-8.webp";
+import reviewBlockAvatar1 from "../../assets/pic-user-1.webp";
+import reviewBlockAvatar2 from "../../assets/pic-user-2.webp";
+import reviewBlockAvatar3 from "../../assets/pic-user-3.webp";
+import reviewBlockAvatar4 from "../../assets/pic-user-4.webp";
+import reviewBlockAvatar5 from "../../assets/pic-user-5.webp";
+import reviewBlockAvatar6 from "../../assets/pic-user-6.webp";
+import reviewBlockAvatar7 from "../../assets/pic-user-7.webp";
+import reviewBlockAvatar8 from "../../assets/pic-user-8.webp";
 import ReviewItem from "./ReviewItem/ReviewItem";
 
 const Reviews = () => {

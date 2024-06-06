@@ -7,9 +7,9 @@ import {
   Typography,
 } from "@mui/material";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
-import NameTextField from "../../common/NameTextField/NameTextField";
-import PhoneNumberTextField from "../../common/PhoneNumberTextField/PhoneNumberTextField";
-import SendButton from "../../common/SendButton/SendButton";
+import NameTextField from "../common/NameTextField/NameTextField";
+import PhoneNumberTextField from "../common/PhoneNumberTextField/PhoneNumberTextField";
+import SendButton from "../common/SendButton/SendButton";
 
 const Reminder = () => {
   const assuranceTypes = [

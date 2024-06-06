@@ -1,9 +1,10 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import Header from "./components/Header/Header";
-import Body from "./components/Body/Body";
-import Footer from "./components/Footer/Footer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/Home/Home";
+import Order from "./routes/Order/Order";
+import OrderPage from "./components/OrderPage/OrderPage";
 
 const theme = createTheme({
   palette: {
@@ -24,9 +25,14 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <LocalizationProvider dateAdapter={AdapterDayjs}>
-        <Header></Header>
-        <Body></Body>
-        <Footer></Footer>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="calculator" element={<Order />}>
+              <Route index element={<OrderPage />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
       </LocalizationProvider>
     </ThemeProvider>
   );

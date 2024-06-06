@@ -8,7 +8,7 @@ import {
   CardMediaContainer,
   CustomButton,
 } from "./offerCardStyles";
-import { CustomBadge } from "../../../components/common/Badge/CustomBadge";
+import { CustomBadge } from "../../components/common/Badge/CustomBadge";
 
 export const OfferCard: FC<OfferCardType> = ({
   title,

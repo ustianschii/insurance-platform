@@ -4,7 +4,7 @@ import {
   Button as MuiButton,
   styled,
 } from "@mui/material";
-import aboutUsLogo from "../../../assets/family.jpeg";
+import aboutUsLogo from "../../assets/family.jpeg";
 
 export const AboutUsWrapper = styled(MuiContainer)(() => ({
   display: "flex",

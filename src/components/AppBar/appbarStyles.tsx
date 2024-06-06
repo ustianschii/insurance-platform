@@ -4,7 +4,7 @@ import {
   styled,
 } from "@mui/material";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-import appbarLogo from "../../../assets/rca-md1.jpeg";
+import appbarLogo from "../../assets/rca-md1.jpeg";
 
 export const AppBarContainer = styled(MuiAppBar)(() => ({
   backgroundColor: "#faf9f9",

@@ -3,7 +3,7 @@ import {
   Container as MuiContainer,
   styled,
 } from "@mui/material";
-import ourWarantyBlockBG from "../../../assets/bg-our-waranty.png";
+import ourWarantyBlockBG from "../../assets/bg-our-waranty.png";
 
 export const OurWarantyWrapper = styled(MuiContainer)(() => ({
   height: "550px",

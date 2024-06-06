@@ -5,7 +5,7 @@ import {
   Button as MuiButton,
   styled,
 } from "@mui/material";
-import blogBigArticleLogo from "../../../assets/blog-big-article-logo.jpeg";
+import blogBigArticleLogo from "../../assets/blog-big-article-logo.jpeg";
 
 export const BlogWrapper = styled(MuiContainer)(() => ({
   height: "700px",

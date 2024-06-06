@@ -1,7 +1,7 @@
 import React from "react";
-import ResponsiveAppBar from "../Header/AppBar/Appbar";
-import { AppBarContainer } from "./AppBar/appbarStyles";
-import HeaderTopBar from "./HeaderTopBar/HeaderTopBar";
+import ResponsiveAppBar from "../AppBar/Appbar";
+import { AppBarContainer } from "../AppBar/appbarStyles";
+import HeaderTopBar from "../HeaderTopBar/HeaderTopBar";
 
 const Header = () => {
   return (

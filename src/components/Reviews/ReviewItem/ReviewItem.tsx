@@ -22,10 +22,12 @@ const ReviewItem = () => {
   const review = reviewsArr[currentReview];
 
   return (
-    <Box display={"flex"} height={"50%"}>
+    <Box display={"flex"}>
       <QuoteIcon />
       <Box display={"block"} width={"100%"}>
-        <Typography marginBottom={"30px"}>{review.text}</Typography>
+        <Typography marginBottom={"30px"} height={"100px"}>
+          {review.text}
+        </Typography>
         <Divider />
         <Typography marginTop={"10px"} fontWeight={"bold"}>
           {review.author}

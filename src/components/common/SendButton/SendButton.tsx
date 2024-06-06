@@ -1,7 +1,7 @@
 import React from "react";
 import { FC } from "react";
 import { CustomButton } from "./sendButtonStyles";
-import { CustomDivider } from "../../Body/Blog/blogStyles";
+import { CustomDivider } from "../../Blog/blogStyles";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { SendButtonType } from "./sendButtonTypes";
 
