@@ -5,11 +5,11 @@ import { CustomDivider } from "../../Blog/blogStyles";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { SendButtonType } from "./sendButtonTypes";
 
-const SendButton: FC<SendButtonType> = ({ title }) => {
+const SendButton: FC<SendButtonType> = ({ title, fullWidth }) => {
   return (
-    <CustomButton variant="contained">
+    <CustomButton variant="contained" fullWidth={fullWidth}>
       {title}
-      <CustomDivider orientation="vertical" flexItem />
+      <CustomDivider orientation="vertical" />
       <KeyboardArrowRightIcon />
     </CustomButton>
   );

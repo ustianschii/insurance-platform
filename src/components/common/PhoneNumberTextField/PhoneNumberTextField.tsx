@@ -1,12 +1,14 @@
-import React from "react";
+import React, { FC } from "react";
 import { CustomTextField } from "./phoneNumberTextFieldStyles";
+import { PhoneNumberTextFieldTypes } from "./phoneNumberTextFieldTypes";
 
-const PhoneNumberTextField = () => {
+const PhoneNumberTextField: FC<PhoneNumberTextFieldTypes> = ({ fullWidth }) => {
   return (
     <CustomTextField
       type="tel"
       size="small"
-      label="Numărul de telefon"
+      fullWidth={fullWidth}
+      label="+373"
       variant="outlined"
       InputLabelProps={{
         style: { color: "gray" },

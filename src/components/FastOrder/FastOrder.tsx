@@ -16,9 +16,9 @@ const FastOrder = () => {
           Lasă un număr de telefon și te vom contacta în 5 minute.
         </Typography>
         <Box display={"flex"} justifyContent={"space-between"} width={"95%"}>
-          <NameTextField />
-          <PhoneNumberTextField />
-          <SendButton title="Solicită" />
+          <NameTextField fullWidth={false} label="Numele tău" />
+          <PhoneNumberTextField fullWidth={false} />
+          <SendButton title="Solicită" fullWidth={false} />
         </Box>
       </Box>
       <Box width={"400px"} height={"250px"}>

@@ -1,12 +1,14 @@
-import React from "react";
+import React, { FC } from "react";
 import { CustomTextField } from "./nameTextFieldStyles";
+import { NameTextFieldTypes } from "./nameTextFieldTypes";
 
-const NameTextField = () => {
+const NameTextField: FC<NameTextFieldTypes> = ({ fullWidth, label }) => {
   return (
     <CustomTextField
       size="small"
       id="outlined-basic"
-      label="Introdu numele tău"
+      fullWidth={fullWidth}
+      label={label}
       variant="outlined"
       InputLabelProps={{
         style: { color: "gray" },
