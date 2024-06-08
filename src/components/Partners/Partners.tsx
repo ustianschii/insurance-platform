@@ -1,4 +1,3 @@
-import React from "react";
 import PartnerLogo from "./PartnerLogo/PartnerLogo";
 import moldcargo from "../../assets/moldcargo.webp";
 import transelit from "../../assets/transelit.webp";

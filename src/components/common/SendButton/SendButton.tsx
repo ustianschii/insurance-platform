@@ -1,4 +1,3 @@
-import React from "react";
 import { FC } from "react";
 import { CustomButton } from "./sendButtonStyles";
 import { CustomDivider } from "../../Blog/blogStyles";

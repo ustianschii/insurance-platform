@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Box, Typography, Divider, IconButton } from "@mui/material";
 import { QuoteIcon } from "../reviewsStyles";
 import StarIcon from "@mui/icons-material/Star";

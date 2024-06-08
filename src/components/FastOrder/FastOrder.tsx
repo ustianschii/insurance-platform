@@ -1,4 +1,3 @@
-import React from "react";
 import { Box, Typography } from "@mui/material";
 import { FastOrderLogo, FastOrderWrapper } from "./fastOrderStyles";
 import NameTextField from "../common/NameTextField/NameTextField";

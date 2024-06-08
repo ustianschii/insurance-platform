@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { Box } from "@mui/material";
 import badge from "../../../assets/bg-bidge.png";
 import { CardMediaContainer, CustomTypography } from "./customBadgeStyles";

@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { CustomTextField } from "./nameTextFieldStyles";
 import { NameTextFieldTypes } from "./nameTextFieldTypes";
 

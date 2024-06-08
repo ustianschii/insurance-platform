@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { PartnerLogoType } from "./partnerLogoTypes";
 import { LogoWrapper } from "./partnerLogoWrapperStyles";
 

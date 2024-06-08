@@ -1,4 +1,3 @@
-import React from "react";
 import Partners from "../Partners/Partners";
 import { FooterWrapper } from "./footerStyles";
 import { Container, Divider } from "@mui/material";
