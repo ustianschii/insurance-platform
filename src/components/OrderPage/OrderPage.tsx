@@ -26,7 +26,7 @@ import PhoneNumberTextField from "../common/PhoneNumberTextField/PhoneNumberText
 import SendButton from "../common/SendButton/SendButton";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import HorizontalLinearStepper from "../HorizontalLinearStepper/HorizontalLinearStepper";
+import CalculatorStepper from "../CalculatorStepper/CalculatorStepper";
 
 const OrderPage = () => {
   return (
@@ -45,7 +45,7 @@ const OrderPage = () => {
         <CarLogo />
       </TopBanner>
       <Box display={"flex"}>
-        <Box maxWidth={"25%"}>
+        <Box width={"23%"}>
           <FastOrderWrapper>
             <Typography variant="h5" mb={"10px"}>
               Nu ai timp pentru a crea comanda online?
@@ -105,7 +105,9 @@ const OrderPage = () => {
             <List>
               <ListItem>
                 <ListItemText>
-                  <Typography variant="h5">Bine de știut</Typography>
+                  <Typography variant="h5">
+                    Întrebări frecvente despre CASCO
+                  </Typography>
                 </ListItemText>
               </ListItem>
               <Divider />
@@ -182,14 +184,23 @@ const OrderPage = () => {
             </List>
           </FAQWrapper>
         </Box>
-        <Box maxWidth={"70%"}>
+        <Box width={"77%"}>
           <Box display={"flex"}>
             <ConstructorWrapper>
               <Box>
-                <HorizontalLinearStepper />
+                <CalculatorStepper />
               </Box>
             </ConstructorWrapper>
-            <ResultWrapper>total</ResultWrapper>
+            <ResultWrapper>
+              <List>
+                <ListItem>
+                  <ListItemText>
+                    <Typography variant="h5">Calcul de asigurare</Typography>
+                  </ListItemText>
+                </ListItem>
+              </List>
+              <Divider />
+            </ResultWrapper>
           </Box>
         </Box>
       </Box>

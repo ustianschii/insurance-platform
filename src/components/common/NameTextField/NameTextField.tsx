@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { CustomTextField } from "./nameTextFieldStyles";
 import { NameTextFieldTypes } from "./nameTextFieldTypes";
 
-const NameTextField: FC<NameTextFieldTypes> = ({ fullWidth, label }) => {
+const NameTextField: FC<NameTextFieldTypes> = ({ fullWidth, label, width }) => {
   return (
     <CustomTextField
       size="small"
@@ -13,6 +13,7 @@ const NameTextField: FC<NameTextFieldTypes> = ({ fullWidth, label }) => {
       InputLabelProps={{
         style: { color: "gray" },
       }}
+      sx={{ width: `${width}px` }}
     />
   );
 };

@@ -29,13 +29,7 @@ const Blog = () => {
         </Typography>
       </Box>
 
-      <Box
-        display={"flex"}
-        width={"100%"}
-        height={"85%"}
-        marginTop={"35px"}
-        justifyContent={"space-between"}
-      >
+      <Box display={"flex"} marginTop={"35px"} justifyContent={"space-between"}>
         <Box width={"49%"}>
           <BigArticleLogo />
           <Box>

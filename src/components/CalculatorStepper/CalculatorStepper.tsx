@@ -1,6 +1,5 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import Stepper from "@mui/material/Stepper";
 import Step from "@mui/material/Step";
 import StepLabel from "@mui/material/StepLabel";
 import Button from "@mui/material/Button";
@@ -10,21 +9,10 @@ import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import DirectionsBusIcon from "@mui/icons-material/DirectionsBus";
 import NameTextField from "../common/NameTextField/NameTextField";
+import { steps, vehicleBrands, productionYears, currency } from "./consts";
+import { CustomStepper } from "./calculatorStepperStyles";
 
-const steps = ["Datele de bază", "Datele asiguratului", "Finalizarea comenzii"];
-const vehicleBrands = [
-  { label: "Audi" },
-  { label: "BMW" },
-  { label: "Mercedes" },
-];
-const productionYears = [
-  { label: "2000" },
-  { label: "2010" },
-  { label: "2020" },
-];
-const currency = [{ label: "€" }, { label: "$" }, { label: "MDL" }];
-
-export default function HorizontalLinearStepper() {
+export default function CalculatorStepper() {
   const [activeStep, setActiveStep] = React.useState(0);
 
   const handleNext = () => {
@@ -40,8 +28,8 @@ export default function HorizontalLinearStepper() {
   };
 
   return (
-    <Box sx={{ width: "100%" }}>
-      <Stepper activeStep={activeStep}>
+    <Box width={"100%"}>
+      <CustomStepper activeStep={activeStep}>
         {steps.map((label) => {
           const stepProps: { completed?: boolean } = {};
           return (
@@ -50,14 +38,14 @@ export default function HorizontalLinearStepper() {
             </Step>
           );
         })}
-      </Stepper>
+      </CustomStepper>
       {activeStep === steps.length ? (
         <React.Fragment>
-          <Typography sx={{ mt: 2, mb: 1 }}>
+          <Typography margin={"2 0 1 0"}>
             All steps completed - you&apos;re finished
           </Typography>
-          <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
-            <Box sx={{ flex: "1 1 auto" }} />
+          <Box display={"flex"} flexDirection={"row"} pt={"2"}>
+            <Box flex={"1 1 auto"} />
             <Button onClick={handleReset}>Reset</Button>
           </Box>
         </React.Fragment>
@@ -66,10 +54,14 @@ export default function HorizontalLinearStepper() {
           {/* <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography> */}
           <Divider />
           <Box p={"10px"}>
-            <Typography variant="h5">Datele de bază</Typography>
-            <Typography variant="body1">Tipul vehiculului: *</Typography>
+            <Typography variant="h5" mt={"20px"} mb={"10px"}>
+              Datele de bază
+            </Typography>
+            <Typography variant="body1" mb={"10px"}>
+              Tipul vehiculului: *
+            </Typography>
 
-            <Box display={"flex"}>
+            <Box display={"flex"} justifyContent={"space-between"} mb={"20px"}>
               <Button variant="outlined">
                 <DirectionsCarIcon />
                 Autoturism
@@ -83,9 +75,11 @@ export default function HorizontalLinearStepper() {
                 Autobuz de pasageri
               </Button>
             </Box>
-            <Box display={"flex"}>
+            <Box display={"flex"} justifyContent={"space-between"} mb={"20px"}>
               <Box>
-                <Typography variant="body1">Marca vehiculului: *</Typography>
+                <Typography variant="body1" mb={"10px"}>
+                  Marca vehiculului: *
+                </Typography>
                 <Autocomplete
                   disablePortal
                   id="vehicle-brand"
@@ -98,11 +92,17 @@ export default function HorizontalLinearStepper() {
                 />
               </Box>
               <Box>
-                <Typography variant="body1">Modelul vehiculului: *</Typography>
-                <NameTextField fullWidth={false} label="Scrie modelul" />
+                <Typography variant="body1" mb={"10px"}>
+                  Modelul vehiculului: *
+                </Typography>
+                <NameTextField
+                  fullWidth={false}
+                  label="Scrie modelul"
+                  width="250"
+                />
               </Box>
             </Box>
-            <Box display={"flex"}>
+            <Box display={"flex"} justifyContent={"space-between"}>
               <Box>
                 <Typography variant="body1">
                   Anul de fabricație a vehiculului: *
@@ -120,16 +120,16 @@ export default function HorizontalLinearStepper() {
               </Box>
               <Box>
                 <Typography variant="body1">
-                  Valoarea de piață a vehiculului *
+                  Valoarea de piață a vehiculului: *
                 </Typography>
-                <Box display={"flex"}>
-                  <NameTextField fullWidth={false} label="" />
+                <Box display={"flex"} mb={"10px"}>
+                  <NameTextField fullWidth={false} label="" width="125" />
                   <Autocomplete
                     disablePortal
                     id="vehicle-brand"
                     options={currency}
                     size="small"
-                    sx={{ width: "100px" }}
+                    sx={{ width: "120px", ml: "5px" }}
                     renderInput={(params) => (
                       <TextField {...params} label="Valuta" />
                     )}
@@ -138,7 +138,7 @@ export default function HorizontalLinearStepper() {
               </Box>
             </Box>
           </Box>
-          <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
+          <Box display={"flex"} flexDirection={"row"} pt={"2"}>
             <Button
               variant="outlined"
               color="inherit"
@@ -146,11 +146,11 @@ export default function HorizontalLinearStepper() {
               onClick={handleBack}
               sx={{ mr: 1 }}
             >
-              Back
+              Pasul anterior
             </Button>
-            <Box sx={{ flex: "1 1 auto" }} />
+            <Box flex={"1 1 auto"} />
             <Button variant="outlined" onClick={handleNext}>
-              {activeStep === steps.length - 1 ? "Finish" : "Next"}
+              {activeStep === steps.length - 1 ? "Trimite" : "Pasul urmator"}
             </Button>
           </Box>
         </React.Fragment>

@@ -62,7 +62,7 @@ const Reminder = () => {
               },
             }}
           />
-          <NameTextField fullWidth={false} label="Numele tău" />
+          <NameTextField fullWidth={false} label="Numele tău" width="" />
           <PhoneNumberTextField fullWidth={false} />
           <SendButton title="Amintește-mi" fullWidth={false} />
         </Box>

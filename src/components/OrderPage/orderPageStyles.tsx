@@ -48,6 +48,7 @@ export const FAQWrapper = styled(MuiBox)(() => ({
 }));
 
 export const ConstructorWrapper = styled(MuiBox)(() => ({
+  width: "75%",
   borderRadius: "15px",
   padding: "30px 20px 30px 20px",
   margin: "0 30px 0 30px",
@@ -55,8 +56,7 @@ export const ConstructorWrapper = styled(MuiBox)(() => ({
 }));
 
 export const ResultWrapper = styled(MuiBox)(() => ({
-  maxWidth: "100%",
+  width: "30%",
   borderRadius: "15px",
-  padding: "30px 20px 30px 20px",
   boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.2)",
 }));
