@@ -1,4 +1,3 @@
-import React from "react";
 import { Box, Typography } from "@mui/material";
 import { CardsContainer, OurWarantyWrapper } from "./ourWarantyStyles";
 import { WarantyCard } from "./WarantyCard/WarantyCard";
