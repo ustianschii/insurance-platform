@@ -56,7 +56,7 @@ const OrderPage = () => {
               <Typography variant="body1" color={"gray"} mb={"5px"}>
                 Numele și prenumele
               </Typography>
-              <NameTextField fullWidth={true} label="Numele tău" />
+              <NameTextField fullWidth={true} label="Numele tău" width="" />
             </Box>
             <Box mb={"10px"}>
               <Typography variant="body1" color={"gray"} mb={"5px"} mt={"10px"}>
