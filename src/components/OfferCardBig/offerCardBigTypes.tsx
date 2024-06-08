@@ -5,4 +5,5 @@ export type OfferCardBigTypes = {
   badgeTitle: string;
   badgePrice: number;
   badgeCurrency: string;
+  link: string;
 };

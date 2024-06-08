@@ -8,6 +8,7 @@ import {
 } from "./offerCardBigStyles";
 import { OfferCardBigTypes } from "./offerCardBigTypes";
 import { CustomBadge } from "../common/Badge/CustomBadge";
+import { Link } from "react-router-dom";
 
 export const OfferCardBig: FC<OfferCardBigTypes> = ({
   title,
@@ -16,6 +17,7 @@ export const OfferCardBig: FC<OfferCardBigTypes> = ({
   badgeTitle,
   badgePrice,
   badgeCurrency,
+  link,
 }) => {
   return (
     <CardContainer>
@@ -45,9 +47,11 @@ export const OfferCardBig: FC<OfferCardBigTypes> = ({
       </CardContentContainer>
 
       <CardMediaContainer image={logo} />
-      <CustomButton variant="contained" size="small">
-        Calculează preț
-      </CustomButton>
+      <Link to={link}>
+        <CustomButton variant="contained" size="small">
+          Calculează preț
+        </CustomButton>
+      </Link>
     </CardContainer>
   );
 };

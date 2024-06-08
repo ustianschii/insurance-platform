@@ -10,10 +10,13 @@ import telegram from "../../assets/telegram.svg";
 import romanian from "../../assets/flag-ro.svg";
 import russian from "../../assets/flag-ru.svg";
 
-export const AppBarContainer = styled(MuiContainer)(() => ({
+export const AppBarContainer = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
   height: "30px",
   justifyContent: "end",
+  [theme.breakpoints.down("lg")]: {
+    display: "none",
+  },
 }));
 
 export const MessengerLogo = styled(MuiBox)(() => ({

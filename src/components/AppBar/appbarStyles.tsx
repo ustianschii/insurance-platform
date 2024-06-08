@@ -1,6 +1,8 @@
 import {
   AppBar as MuiAppBar,
   SvgIcon as MuiSvgIcon,
+  Box as MuiBox,
+  Button as MuiButton,
   styled,
 } from "@mui/material";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
@@ -36,4 +38,19 @@ export const AppBarLogo = styled(MuiSvgIcon)(() => ({
 export const PhoneIcon = styled(LocalPhoneIcon)(() => ({
   fontSize: "24px",
   color: "#fa7327",
+}));
+
+export const CallContainer = styled(MuiBox)(({ theme }) => ({
+  color: "#fa7327",
+  [theme.breakpoints.down("lg")]: {
+    display: "none",
+  },
+}));
+
+export const LoginButton = styled(MuiButton)(({ theme }) => ({
+  backgroundColor: "#01ad40",
+  borderRadius: "5px",
+  [theme.breakpoints.down("lg")]: {
+    display: "none",
+  },
 }));

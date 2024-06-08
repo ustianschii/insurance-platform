@@ -8,6 +8,7 @@ import {
   CustomButton,
 } from "./offerCardStyles";
 import { CustomBadge } from "../../components/common/Badge/CustomBadge";
+import { Link } from "react-router-dom";
 
 export const OfferCard: FC<OfferCardType> = ({
   title,
@@ -16,6 +17,7 @@ export const OfferCard: FC<OfferCardType> = ({
   badgeTitle,
   badgePrice,
   badgeCurrency,
+  link,
 }) => {
   return (
     <CardContainer>
@@ -42,9 +44,11 @@ export const OfferCard: FC<OfferCardType> = ({
         </Typography>
       </CardContentContainer>
       <CardMediaContainer image={logo} />
-      <CustomButton variant="contained" size="small">
-        Calculează preț
-      </CustomButton>
+      <Link to={link}>
+        <CustomButton variant="contained" size="small">
+          Calculează preț
+        </CustomButton>
+      </Link>
     </CardContainer>
   );
 };

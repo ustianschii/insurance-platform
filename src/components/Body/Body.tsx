@@ -47,6 +47,7 @@ const Body = () => {
           badgeTitle={"de la"}
           badgePrice={283}
           badgeCurrency="lei"
+          link=""
         ></OfferCard>
         <OfferCard
           title={"Carte Verde"}
@@ -55,6 +56,7 @@ const Body = () => {
           badgeTitle={"de la"}
           badgePrice={57}
           badgeCurrency="lei"
+          link=""
         ></OfferCard>
         <OfferCard
           title={"CASCO"}
@@ -63,6 +65,7 @@ const Body = () => {
           badgeTitle={"de la"}
           badgePrice={3000}
           badgeCurrency="lei"
+          link="/casco"
         ></OfferCard>
         <OfferCardBig
           title="Asigurarea sănătății"
@@ -71,6 +74,7 @@ const Body = () => {
           badgeTitle={"de la"}
           badgePrice={45}
           badgeCurrency="lei"
+          link=""
         ></OfferCardBig>
         <OfferCardBig
           title="Asigurarea bunurilor"
@@ -79,6 +83,7 @@ const Body = () => {
           badgeTitle={"de la"}
           badgePrice={201}
           badgeCurrency="lei"
+          link=""
         ></OfferCardBig>
       </OfferCardsContainer>
       <AboutUs />

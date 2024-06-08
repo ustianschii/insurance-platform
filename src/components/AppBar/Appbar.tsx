@@ -8,7 +8,13 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import { AppBarCustom, AppBarLogo, PhoneIcon } from "./appbarStyles";
+import {
+  AppBarCustom,
+  AppBarLogo,
+  CallContainer,
+  LoginButton,
+  PhoneIcon,
+} from "./appbarStyles";
 import { Toolbar } from "@mui/material";
 import { Link } from "react-router-dom";
 
@@ -83,26 +89,26 @@ export default function ResponsiveAppBar() {
             </Menu>
           </Box>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            <Link to="/calculator">
+            <Link to="/casco">
               <Button>Casco</Button>
             </Link>
-            <Link to="/calculator">
+            <Link to="">
               <Button>RCA</Button>
             </Link>
-            <Link to="/calculator">
+            <Link to="">
               <Button>Carte Verde</Button>
             </Link>
-            <Link to="/calculator">
+            <Link to="">
               <Button>Asigurarea sănătății</Button>
             </Link>
-            <Link to="/calculator">
+            <Link to="">
               <Button>Asigurarea bunurilor</Button>
             </Link>
-            <Link to="/calculator">
+            <Link to="">
               <Button>Contacte</Button>
             </Link>
           </Box>
-          <Box display={"flex"} color={"#fa7327"}>
+          <CallContainer>
             <IconButton href="tel:+37360544111">
               <PhoneIcon />
               <Typography
@@ -115,18 +121,10 @@ export default function ResponsiveAppBar() {
                 0(60)544111
               </Typography>
             </IconButton>
-          </Box>
-          <Box
-            sx={{
-              flexGrow: 0,
-              backgroundColor: "#01ad40",
-              borderRadius: "5px",
-            }}
-          >
-            <Tooltip title="Login">
-              <Button variant="outlined">Intra</Button>
-            </Tooltip>
-          </Box>
+          </CallContainer>
+          <Tooltip title="Login">
+            <LoginButton variant="outlined">Intra</LoginButton>
+          </Tooltip>
         </Toolbar>
       </Container>
     </AppBarCustom>

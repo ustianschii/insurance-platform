@@ -28,7 +28,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="calculator" element={<Order />}>
+            <Route path="casco" element={<Order />}>
               <Route index element={<OrderPage />} />
             </Route>
           </Routes>
