@@ -3,27 +3,26 @@ import {
   SvgIcon as MuiSvgIcon,
   Box as MuiBox,
   Button as MuiButton,
+  Container as MuiContainer,
   styled,
 } from "@mui/material";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import appbarLogo from "../../assets/rca-md1.jpeg";
 
-export const AppBarContainer = styled(MuiAppBar)(() => ({
-  backgroundColor: "#faf9f9",
-  ".MuiPaper-root": {
-    backgroundColor: "white",
-  },
-}));
-
 export const AppBarCustom = styled(MuiAppBar)(() => ({
+  backgroundColor: "white",
   position: "static",
-  ".MuiContainer-root": { backgroundColor: "white", maxWidth: "68%" },
+  ".MuiContainer-root": { backgroundColor: "#ffffff", maxWidth: "100%" },
   ".MuiButtonBase-root": {
-    color: "black",
     fontSize: "15px",
     fontWeight: "500",
   },
-  ".MuiButtonBase-root:hover": { color: "green", fontSize: "17px" },
+}));
+
+export const NavContainer = styled(MuiContainer)(() => ({
+  display: "flex",
+  justifyContent: "center",
+  maxWidth: "70%",
 }));
 
 export const AppBarLogo = styled(MuiSvgIcon)(() => ({
@@ -33,6 +32,16 @@ export const AppBarLogo = styled(MuiSvgIcon)(() => ({
   height: "75px",
   width: "150px",
   marginLeft: "-50px",
+}));
+
+export const AppBarLinks = styled(MuiBox)(({ theme }) => ({
+  [theme.breakpoints.down("lg")]: {
+    display: "flex",
+  },
+  [theme.breakpoints.down("md")]: {
+    display: "none",
+  },
+  whiteSpace: "nowrap",
 }));
 
 export const PhoneIcon = styled(LocalPhoneIcon)(() => ({

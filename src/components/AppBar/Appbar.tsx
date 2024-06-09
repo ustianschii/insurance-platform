@@ -4,15 +4,16 @@ import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import {
   AppBarCustom,
+  AppBarLinks,
   AppBarLogo,
   CallContainer,
   LoginButton,
+  NavContainer,
   PhoneIcon,
 } from "./appbarStyles";
 import { Toolbar } from "@mui/material";
@@ -42,7 +43,7 @@ export default function ResponsiveAppBar() {
 
   return (
     <AppBarCustom>
-      <Container maxWidth="xl">
+      <NavContainer>
         <Toolbar>
           <IconButton
             size="large"
@@ -88,7 +89,7 @@ export default function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <AppBarLinks>
             <Link to="/casco">
               <Button>Casco</Button>
             </Link>
@@ -107,7 +108,7 @@ export default function ResponsiveAppBar() {
             <Link to="">
               <Button>Contacte</Button>
             </Link>
-          </Box>
+          </AppBarLinks>
           <CallContainer>
             <IconButton href="tel:+37360544111">
               <PhoneIcon />
@@ -126,7 +127,7 @@ export default function ResponsiveAppBar() {
             <LoginButton variant="outlined">Intra</LoginButton>
           </Tooltip>
         </Toolbar>
-      </Container>
+      </NavContainer>
     </AppBarCustom>
   );
 }

@@ -1,22 +1,8 @@
 import { Box as MuiBox, styled } from "@mui/material";
-import logo from "../../assets/body-image.jpeg";
 
 export const MainWrapper = styled(MuiBox)(() => ({
-  maxWidth: "100%",
-  backgroundColor: "#d1cccc30",
+  paddingLeft: "50px",
+  paddingRight: "50px",
+  backgroundColor: "#d1cccc0",
   marginBottom: "50px",
-}));
-
-export const WalppaperContainer = styled(MuiBox)(() => ({
-  backgroundImage: `url(${logo})`,
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
-  height: "500px",
-  width: "100%",
-}));
-export const WallpaperTextContainer = styled(MuiBox)(() => ({
-  display: "block",
-  paddingLeft: "20%",
-  paddingTop: "5%",
-  color: "white",
 }));

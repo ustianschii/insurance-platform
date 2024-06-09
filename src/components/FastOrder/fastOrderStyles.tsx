@@ -17,7 +17,10 @@ export const FastOrderWrapper = styled(MuiContainer)(() => ({
   marginBottom: "100px",
 }));
 
-export const FastOrderLogo = styled(MuiBox)(() => ({
+export const FastOrderLogo = styled(MuiBox)(({ theme }) => ({
+  [theme.breakpoints.down("xl")]: {
+    display: "none",
+  },
   backgroundImage: `url(${fastOrderCarLogo})`,
   height: "350px",
   width: "550px",

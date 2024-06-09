@@ -1,20 +1,10 @@
 import {
-  Container as MuiContainer,
   Card as MuiCard,
   CardContent as MuiCardContent,
   CardMedia as MuiCardMedia,
   Button as MuiButton,
   styled,
 } from "@mui/material";
-
-export const OfferCardsContainer = styled(MuiContainer)(() => ({
-  display: "flex",
-  justifyContent: "space-between",
-  flexWrap: "wrap",
-  height: "650px",
-  marginTop: "-100px",
-  marginBottom: "-50px",
-}));
 
 export const CardContainer = styled(MuiCard)(() => ({
   display: "flex",
