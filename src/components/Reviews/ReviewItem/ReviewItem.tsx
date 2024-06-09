@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Box, Typography, Divider, IconButton } from "@mui/material";
-import { QuoteIcon } from "../reviewsStyles";
+import { Author, QuoteIcon, Rating } from "./reviewItemStyles";
 import StarIcon from "@mui/icons-material/Star";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import { reviewsArr } from "../reviewsArr";
+import { Text } from "./reviewItemStyles";
 
 const ReviewItem = () => {
   const [currentReview, setCurrentReview] = useState(0);
@@ -25,20 +26,16 @@ const ReviewItem = () => {
     <Box display={"flex"}>
       <QuoteIcon />
       <Box display={"block"} width={"100%"}>
-        <Typography marginBottom={"30px"} height={"100px"}>
-          {review.text}
-        </Typography>
+        <Text>{review.text}</Text>
         <Divider />
-        <Typography marginTop={"10px"} fontWeight={"bold"}>
-          {review.author}
-        </Typography>
-        <Box color={"#fa7327"} m={"5px 0 0 -5px"}>
+        <Author>{review.author}</Author>
+        <Rating color={"#fa7327"}>
           <StarIcon />
           <StarIcon />
           <StarIcon />
           <StarIcon />
           <StarIcon />
-        </Box>
+        </Rating>
         <Box display={"flex"} m={"15px 0 0 58px"}>
           <IconButton onClick={handlePrevReview} disabled={currentReview === 0}>
             <KeyboardArrowLeftIcon />

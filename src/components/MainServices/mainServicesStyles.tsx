@@ -5,7 +5,5 @@ export const MainServicesContainer = styled(MuiContainer)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
   flexWrap: "wrap",
-  height: "650px",
   marginTop: "-100px",
-  marginBottom: "-50px",
 }));

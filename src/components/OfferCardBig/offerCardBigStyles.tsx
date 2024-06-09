@@ -11,7 +11,6 @@ export const CardContainer = styled(MuiCard)(() => ({
   position: "relative",
   height: "230px",
   width: "560px",
-  marginTop: "-120px",
   borderRadius: "15px",
   boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.3)",
 }));
