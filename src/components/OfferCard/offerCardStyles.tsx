@@ -9,23 +9,25 @@ import {
 export const CardContainer = styled(MuiCard)(() => ({
   display: "flex",
   position: "relative",
-  height: "230px",
-  width: "365px",
+  minHeight: "230px",
+  minWidth: "365px",
+  maxWidth: "365px",
   borderRadius: "15px",
   boxShadow: "5px 5px 10px rgba(0, 0, 0, 0.3)",
+  marginBottom: "50px",
 }));
 
 export const CardContentContainer = styled(MuiCardContent)(() => ({
   display: "block",
-  width: "100%",
+  minWidth: "365px",
   height: "50%",
 }));
 
 export const CardMediaContainer = styled(MuiCardMedia)(() => ({
   position: "absolute",
   bottom: "0",
-  height: "110px",
-  width: "160px",
+  minHeight: "110px",
+  minWidth: "160px",
   margin: "0 0 10px 10px",
 }));
 

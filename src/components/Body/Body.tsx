@@ -26,4 +26,3 @@ const Body = () => {
 };
 
 export default Body;
-// refactor wallpaper container
