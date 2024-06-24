@@ -2,7 +2,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./components/Home/Home";
+import { Home } from "./components/Home/Home";
 import Order from "./routes/Order/Order";
 import OrderPage from "./components/OrderPage/OrderPage";
 

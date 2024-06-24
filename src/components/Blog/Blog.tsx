@@ -5,7 +5,7 @@ import {
   CustomButton,
   CustomDivider,
 } from "./blogStyles";
-import BlogSmallCard from "./BlogSmallCard/BlogSmallCard";
+import { BlogSmallCard } from "./BlogSmallCard/BlogSmallCard";
 import blogSmallArticleLogoFirst from "../../assets/blog-small-article-first-logo.jpeg";
 import blogSmallArticleLogoSecond from "../../assets/blog-small-article-second-logo.jpg";
 import blogSmallArticleLogoThird from "../../assets/blog-small-article-third-logo.jpeg";

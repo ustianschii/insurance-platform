@@ -1,15 +1,27 @@
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
-import Body from "../Body/Body";
+import { MainWrapper } from "./bodyStyles";
+import { AboutUs } from "../AboutUs/AboutUs";
+import { OurWaranty } from "../OurWaranty/OurWaranty";
+import Reviews from "../Reviews/Reviews";
+import Blog from "../Blog/Blog";
+import FastOrder from "../FastOrder/FastOrder";
+import Reminder from "../Reminder/Reminder";
+import MainServices from "../MainServices/MainServices";
+import MainWallpaper from "../MainWallpaper/MainWallpaper";
+import { Layout } from "../Layout/Layout";
 
-const Home = () => {
+export const Home = () => {
   return (
-    <>
-      <Header />
-      <Body />
-      <Footer />
-    </>
+    <Layout>
+      <MainWallpaper />
+      <MainWrapper>
+        <MainServices />
+        <AboutUs />
+        <OurWaranty />
+        <Reviews />
+        <Blog />
+        <FastOrder />
+        <Reminder />
+      </MainWrapper>
+    </Layout>
   );
 };
-
-export default Home;

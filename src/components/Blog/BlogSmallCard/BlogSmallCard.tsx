@@ -1,4 +1,3 @@
-import { FC } from "react";
 import { Box, Typography } from "@mui/material";
 import { CustomDivider } from "../blogStyles";
 import {
@@ -7,17 +6,17 @@ import {
   CustomButton,
   CardContentWrapper,
 } from "./blogSmallCardStyles";
-import { BlogSmallType } from "./blogSmallCardTypes";
+import { BlogSmallCardProps } from "./blogSmallCardTypes";
 
-const BlogSmallCard: FC<BlogSmallType> = ({
+export const BlogSmallCard = ({
   logo,
   theme,
   date,
   title,
   description,
-}) => {
+}: BlogSmallCardProps) => {
   return (
-    <Box width={"100%"}>
+    <Box width="100%">
       <CardWrapper>
         <CardMediaWrapper logo={logo} />
         <CardContentWrapper>
@@ -47,5 +46,3 @@ const BlogSmallCard: FC<BlogSmallType> = ({
     </Box>
   );
 };
-
-export default BlogSmallCard;

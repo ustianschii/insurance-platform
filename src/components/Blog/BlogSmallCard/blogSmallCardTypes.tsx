@@ -1,4 +1,4 @@
-export type BlogSmallType = {
+export type BlogSmallCardProps = {
   logo: string;
   theme: string;
   date: string;

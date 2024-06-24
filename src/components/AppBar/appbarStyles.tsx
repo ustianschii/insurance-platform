@@ -6,6 +6,7 @@ import {
   Container as MuiContainer,
   styled,
 } from "@mui/material";
+import MuiMenuIcon from "@mui/icons-material/Menu";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import appbarLogo from "../../assets/rca-md1.jpeg";
 
@@ -60,6 +61,13 @@ export const LoginButton = styled(MuiButton)(({ theme }) => ({
   backgroundColor: "#01ad40",
   borderRadius: "5px",
   [theme.breakpoints.down("lg")]: {
+    display: "none",
+  },
+}));
+
+export const MenuIcon = styled(MuiMenuIcon)(({ theme }) => ({
+  display: "flex",
+  [theme.breakpoints.up("md")]: {
     display: "none",
   },
 }));

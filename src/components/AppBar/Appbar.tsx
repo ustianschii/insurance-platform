@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
+// import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
@@ -15,6 +15,7 @@ import {
   LoginButton,
   NavContainer,
   PhoneIcon,
+  MenuIcon,
 } from "./appbarStyles";
 import { Toolbar } from "@mui/material";
 import { Link } from "react-router-dom";
@@ -52,10 +53,10 @@ export default function ResponsiveAppBar() {
             onClick={handleOpenNavMenu}
           >
             <MenuIcon
-              sx={{
-                display: { xs: "flex", md: "none" },
-                marginLeft: "-20px",
-              }}
+            // sx={{
+            //   display: { xs: "flex", md: "none" },
+            //   marginLeft: "-20px",
+            // }}
             />
           </IconButton>
           <IconButton sx={{ "&:hover": { backgroundColor: "transparent" } }}>
