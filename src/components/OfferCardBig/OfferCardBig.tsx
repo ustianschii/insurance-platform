@@ -2,7 +2,6 @@ import { FC } from "react";
 import Typography from "@mui/material/Typography";
 import {
   CardContainer,
-  CardContentContainer,
   CardMediaContainer,
   CustomButton,
 } from "./offerCardBigStyles";
@@ -21,30 +20,28 @@ export const OfferCardBig: FC<OfferCardBigTypes> = ({
 }) => {
   return (
     <CardContainer>
-      <CardContentContainer>
-        <CustomBadge
-          badgeTitle={badgeTitle}
-          badgePrice={badgePrice}
-          badgeCurrency={badgeCurrency}
-        ></CustomBadge>
-        <Typography
-          gutterBottom
-          variant="h5"
-          component="div"
-          padding={"10px 0 0 10px"}
-          marginBottom={"10px"}
-        >
-          {title}
-        </Typography>
-        <Typography
-          variant="body1"
-          color="text.secondary"
-          padding={"0px 0 0 10px"}
-          maxWidth={"55%"}
-        >
-          {description}
-        </Typography>
-      </CardContentContainer>
+      <CustomBadge
+        badgeTitle={badgeTitle}
+        badgePrice={badgePrice}
+        badgeCurrency={badgeCurrency}
+      ></CustomBadge>
+      <Typography
+        gutterBottom
+        variant="h5"
+        component="div"
+        padding={"10px 0 0 10px"}
+        marginBottom={"10px"}
+      >
+        {title}
+      </Typography>
+      <Typography
+        variant="body1"
+        color="text.secondary"
+        padding={"0px 0 0 10px"}
+        maxWidth={"55%"}
+      >
+        {description}
+      </Typography>
 
       <CardMediaContainer image={logo} />
       <Link to={link}>

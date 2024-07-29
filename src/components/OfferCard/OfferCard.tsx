@@ -3,7 +3,6 @@ import Typography from "@mui/material/Typography";
 import { OfferCardType } from "./offerCardTypes";
 import {
   CardContainer,
-  CardContentContainer,
   CardMediaContainer,
   CustomButton,
 } from "./offerCardStyles";
@@ -21,29 +20,27 @@ export const OfferCard: FC<OfferCardType> = ({
 }) => {
   return (
     <CardContainer>
-      <CardContentContainer>
-        <CustomBadge
-          badgeTitle={badgeTitle}
-          badgePrice={badgePrice}
-          badgeCurrency={badgeCurrency}
-        ></CustomBadge>
-        <Typography
-          gutterBottom
-          variant="h5"
-          component="div"
-          padding={"10px 0 0 10px"}
-        >
-          {title}
-        </Typography>
-        <Typography
-          maxWidth={"70%"}
-          variant="body1"
-          color="text.secondary"
-          padding={"0px 0 0 10px"}
-        >
-          {description}
-        </Typography>
-      </CardContentContainer>
+      <CustomBadge
+        badgeTitle={badgeTitle}
+        badgePrice={badgePrice}
+        badgeCurrency={badgeCurrency}
+      ></CustomBadge>
+      <Typography
+        gutterBottom
+        variant="h5"
+        component="div"
+        padding={"10px 0 0 10px"}
+      >
+        {title}
+      </Typography>
+      <Typography
+        maxWidth={"70%"}
+        variant="body1"
+        color="text.secondary"
+        padding={"0px 0 0 10px"}
+      >
+        {description}
+      </Typography>
       <CardMediaContainer image={logo} />
       <Link to={link}>
         <CustomButton variant="contained" size="small">

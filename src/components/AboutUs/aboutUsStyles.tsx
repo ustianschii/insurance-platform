@@ -8,19 +8,18 @@ import aboutUsLogo from "../../assets/family.jpeg";
 
 export const AboutUsWrapper = styled(MuiContainer)(() => ({
   display: "flex",
-  position: "relative",
   height: "450px",
   marginBottom: "100px",
 }));
 
 export const CustomButton = styled(MuiButton)(() => ({
-  margin: "46px 0 0 0",
   backgroundColor: "#01ad40",
+  position: "relative",
+  top: "70px",
 }));
 
 export const AboutUsImgBox = styled(MuiBox)(() => ({
   width: "60%",
-  height: "100%",
   borderRadius: "15px",
   backgroundImage: `url(${aboutUsLogo})`,
 }));

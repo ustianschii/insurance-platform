@@ -24,11 +24,13 @@ export const SmallOfferCards = styled(MuiBox)(({ theme }) => ({
   [theme.breakpoints.down("xl")]: {},
   display: "flex",
   justifyContent: "space-between",
+  marginBottom: "50px",
 }));
 
-export const BigOfferCars = styled(MuiBox)(({ theme }) => ({
+export const BigOfferCards = styled(MuiBox)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {},
   [theme.breakpoints.down("lg")]: {},
   [theme.breakpoints.down("xl")]: {},
   display: "flex",
+  justifyContent: "space-between",
 }));

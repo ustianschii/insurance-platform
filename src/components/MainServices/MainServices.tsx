@@ -6,7 +6,7 @@ import thirdCardLogo from "../../assets/car-3b.jpeg";
 import firstBigCardLogo from "../../assets/pic-block-1-300x213.jpeg";
 import secondBigCardLogo from "../../assets/pic-block-2.jpeg";
 import {
-  BigOfferCars,
+  BigOfferCards,
   MainServicesContainer,
   SmallOfferCards,
 } from "./mainServicesStyles";
@@ -43,7 +43,7 @@ const MainServices = () => {
           link="/casco"
         ></OfferCard>
       </SmallOfferCards>
-      <BigOfferCars>
+      <BigOfferCards>
         <OfferCardBig
           title="Asigurarea sănătății"
           description="Asigurarea de sănătate de cea mai înaltă calitate, în RM și când călătorești peste hotare"
@@ -62,7 +62,7 @@ const MainServices = () => {
           badgeCurrency="lei"
           link=""
         ></OfferCardBig>
-      </BigOfferCars>
+      </BigOfferCards>
     </MainServicesContainer>
   );
 };
