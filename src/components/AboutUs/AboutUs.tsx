@@ -8,7 +8,7 @@ import {
 export const AboutUs = () => {
   return (
     <AboutUsWrapper disableGutters>
-      <Box width="40%">
+      <Box width="45%">
         <Typography
           variant="body2"
           color="#ffad14"
@@ -17,7 +17,7 @@ export const AboutUs = () => {
         >
           DESPRE NOI
         </Typography>
-        <Typography variant="h4" color="initial" marginBottom={"20px"}>
+        <Typography variant="h3" color="initial" marginBottom={"20px"}>
           Ești în mâini bune!
         </Typography>
         <Typography variant="body1" color="initial" padding={"0 20px 0 0"}>

@@ -15,7 +15,7 @@ export const AboutUsWrapper = styled(MuiContainer)(() => ({
 export const CustomButton = styled(MuiButton)(() => ({
   backgroundColor: "#01ad40",
   position: "relative",
-  top: "70px",
+  top: "15%",
 }));
 
 export const AboutUsImgBox = styled(MuiBox)(() => ({

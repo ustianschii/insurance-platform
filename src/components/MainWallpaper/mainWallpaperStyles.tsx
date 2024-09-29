@@ -10,7 +10,6 @@ export const WalppaperContainer = styled(MuiBox)(() => ({
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   height: "500px",
-  width: "100%",
 }));
 
 export const TextContainer = styled(MuiBox)(({ theme }) => ({
@@ -28,7 +27,6 @@ export const TextContainer = styled(MuiBox)(({ theme }) => ({
     textAlign: "center",
     width: "90%",
   },
-  display: "block",
   paddingLeft: "18%",
   paddingTop: "5%",
   color: "white",
@@ -46,9 +44,8 @@ export const ShortDescription = styled(MuiTypography)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     textAlign: "center",
   },
-  display: "block",
   width: "45%",
   color: "white",
-  fontSize: "17px",
+  fontSize: "20px",
   marginTop: "30px",
 }));

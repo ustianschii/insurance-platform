@@ -23,7 +23,7 @@ export const CardMediaContainer = styled(MuiCardMedia)(() => ({
   minWidth: "45%",
 }));
 
-export const CustomButton = styled(MuiButton)(() => ({
+export const Button = styled(MuiButton)(() => ({
   position: "absolute",
   bottom: "20px",
   right: "20px",

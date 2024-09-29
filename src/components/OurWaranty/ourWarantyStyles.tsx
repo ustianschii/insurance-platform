@@ -6,7 +6,7 @@ import {
 import ourWarantyBlockBG from "../../assets/bg-our-waranty.png";
 
 export const OurWarantyWrapper = styled(MuiContainer)(() => ({
-  height: "550px",
+  height: "600px",
   backgroundColor: "#1d2750",
   backgroundImage: `url(${ourWarantyBlockBG})`,
   backgroundRepeat: "no-repeat",
@@ -18,5 +18,5 @@ export const OurWarantyWrapper = styled(MuiContainer)(() => ({
 export const CardsContainer = styled(MuiBox)(() => ({
   display: "flex",
   flexWrap: "wrap",
-  height: "320px",
+  height: "80%",
 }));

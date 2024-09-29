@@ -3,10 +3,10 @@ import {
   CardContainer,
   CustomIcon,
   Description,
-  TextContainer,
   Title,
 } from "./warantyCardStyles";
 import { ourWarantyCardTypes } from "./warantyCardTypes";
+import { Box } from "@mui/material";
 
 export const WarantyCard: FC<ourWarantyCardTypes> = ({
   icon,
@@ -16,10 +16,10 @@ export const WarantyCard: FC<ourWarantyCardTypes> = ({
   return (
     <CardContainer>
       <CustomIcon>{icon}</CustomIcon>
-      <TextContainer>
-        <Title variant="body1">{title}</Title>
+      <Box>
+        <Title>{title}</Title>
         <Description variant="body1">{description}</Description>
-      </TextContainer>
+      </Box>
     </CardContainer>
   );
 };

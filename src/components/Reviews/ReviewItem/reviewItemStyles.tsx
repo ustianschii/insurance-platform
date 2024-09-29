@@ -11,7 +11,8 @@ export const Text = styled(MuiTypography)(({ theme }) => ({
     paddingRight: "30px",
   },
   [theme.breakpoints.down("xl")]: {},
-  marginBottom: "30px",
+  marginBottom: "50px",
+  minHeight: "100px",
 }));
 
 export const Author = styled(MuiTypography)(({ theme }) => ({

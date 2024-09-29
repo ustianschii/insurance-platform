@@ -12,13 +12,14 @@ export const ReviewsWrapper = styled(MuiContainer)(({ theme }) => ({
     display: "block",
   },
   display: "flex",
-  maxWidth: "1200px",
   backgroundColor: "#d0d4e05c",
   backgroundImage: `url(${reviewsBlockBG})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   borderRadius: "15px",
   marginBottom: "100px",
+  paddingTop: "20px",
+  // minWidth: "600px",
 }));
 
 export const ReviewsLeftBlock = styled(MuiContainer)(({ theme }) => ({
@@ -41,7 +42,7 @@ export const Title = styled(MuiTypography)(({ theme }) => ({
     marginBottom: "25px",
   },
   [theme.breakpoints.down("xl")]: {},
-  marginBottom: "50px",
+  marginBottom: "70px",
 }));
 
 export const ReviewsBgRightBlock = styled(MuiBox)(({ theme }) => ({
@@ -52,9 +53,7 @@ export const ReviewsBgRightBlock = styled(MuiBox)(({ theme }) => ({
     backgroundSize: "cover",
   },
   backgroundImage: `url(${reviewsBlockBgRight})`,
-  backgroundSize: "contain",
-  backgroundRepeat: "no-repeat",
-  margin: "5px 0 0 0",
+  backgroundSize: "cover",
   borderEndEndRadius: "15px",
 }));
 

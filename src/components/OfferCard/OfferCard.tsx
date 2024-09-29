@@ -1,11 +1,7 @@
 import { FC } from "react";
 import Typography from "@mui/material/Typography";
 import { OfferCardType } from "./offerCardTypes";
-import {
-  CardContainer,
-  CardMediaContainer,
-  CustomButton,
-} from "./offerCardStyles";
+import { CardContainer, CardMediaContainer, Button } from "./offerCardStyles";
 import { CustomBadge } from "../../components/common/Badge/CustomBadge";
 import { Link } from "react-router-dom";
 
@@ -43,9 +39,9 @@ export const OfferCard: FC<OfferCardType> = ({
       </Typography>
       <CardMediaContainer image={logo} />
       <Link to={link}>
-        <CustomButton variant="contained" size="small">
+        <Button variant="contained" size="small">
           Calculează preț
-        </CustomButton>
+        </Button>
       </Link>
     </CardContainer>
   );
